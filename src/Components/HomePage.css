@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
+.body.active .home {
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  animation: home-animation 0.3s linear;
+  transform: perspective(1300px) translateX(-7rem) translateY(4.5rem)
+    rotateY(30deg) scale(0.5);
+  z-index: 101;
+}
+
+.body.active .home:hover {
+  transform: perspective(1300px) translateX(-6.7rem) translateY(2.5rem)
+    rotateY(30deg) scale(0.51);
+}
+
+.body.active .home.hover-home {
+  transform: perspective(1300px) translateX(-6.7rem) translateY(2.5rem)
+    rotateY(30deg) scale(0.51);
+}
+
+.home.active-home {
+  z-index: 102;
+}
+
+
+@keyframes home-animation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: perspective(1300px) translateX(-7rem) translateY(4.5rem)
+      rotateY(30deg) scale(0.5);
+  }
+}
+
+.textt{
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+
+}
+
+
+.rectangle{
+  position: absolute;
+  top:6rem;
+  right:15%;
+  transform: rotate(-13deg);
+  height: 35rem;
+  z-index: 0;
+  box-shadow: 0 0 100px 10px rgb(92, 8, 92);
+}
+
+
+.desc{
+  width: 50%;
+}
+
+.title{
+  font-family: 'Rubik Vinyl', cursive;
+  
+}
+
+.links{
+  cursor: pointer;
+}
+
+.pfp{
+  position: absolute;
+  top: 8rem;
+  right: 15%;
+  z-index: 2;
+}
+.letter {
+  will-change: transform;
+  cursor: default;
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+.letter:hover{
+  transform: scaleX(0.6) scaleY(1.4);
+}
+

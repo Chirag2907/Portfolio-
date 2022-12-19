@@ -1,0 +1,42 @@
+.body.active .project.hover-proj {
+  opacity: 1;
+  transform: perspective(1300px) translateX(-9rem) translateY(0.5rem)
+    rotateY(30deg) scale(0.51);
+}
+.body.active .project:hover {
+  opacity: 1;
+  transform: perspective(1300px) translateX(-9rem) translateY(0.5rem)
+    rotateY(30deg) scale(0.51);
+}
+
+.body.active .project {
+  display: grid;
+  align-content: space-between;
+  opacity: 0.8;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  animation: animate-proj 0.5s linear;
+  transform: perspective(1300px) translateX(-9rem) translateZ(20px)
+    translateY(3rem) rotateY(30deg) scale(0.5);
+  z-index: 100;
+}
+
+@keyframes animate-proj {
+  0% {
+    transform: scale(1);
+    display: grid;
+    place-content: center;
+  }
+  50% {
+    transform: perspective(1300px) translateX(-7rem) translateY(4.5rem)
+      rotateY(30deg) scale(0.5);
+    display: grid;
+    place-content: center;
+  }
+  100% {
+    transform: perspective(1300px) translateX(-9rem) translateZ(20px)
+      translateY(3rem) rotateY(30deg) scale(0.5);
+  }
+}

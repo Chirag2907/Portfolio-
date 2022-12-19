@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.tagcloud {
+    font-family: 'Poppins', sans-serif;  
+    font-size: 20px;
+    margin: auto;
+    width: 50%;
+  }
+  .tagcloud--item:hover {
+    color: #36454F;
+  }
+
+.body.active .about.hover-about {
+  opacity: 1;
+  transform: perspective(1300px) translateX(-11.5rem) translateY(-1rem)
+    rotateY(30deg) scale(0.51);
+}
+.body.active .about {
+  display: grid;
+  align-content: space-between;
+  opacity: 0.6;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  animation: animate-about 0.5s linear;
+  transform: perspective(1300px) translateX(-11rem) translateZ(40px)
+    translateY(1.5rem) rotateY(30deg) scale(0.5);
+  z-index: 99;
+}
+.about.active-about {
+  z-index: 102;
+}
+.body.active .about:hover {
+  opacity: 1;
+  transform: perspective(1300px) translateX(-11.5rem) translateY(-1rem)
+    rotateY(30deg) scale(0.51);
+}
+@keyframes animate-about {
+  0% {
+    transform: scale(1);
+    display: grid;
+    place-content: center;
+  }
+  50% {
+    transform: perspective(1300px) translateX(-7rem) translateY(4.5rem)
+      rotateY(30deg) scale(0.5);
+    display: grid;
+    place-content: center;
+  }
+  100% {
+    transform: perspective(1300px) translateX(-11rem) translateZ(40px)
+      translateY(1.5rem) rotateY(30deg) scale(0.5);
+  }
+}

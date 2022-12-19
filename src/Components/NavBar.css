@@ -1,0 +1,51 @@
+header {
+  position: fixed;
+  top: 1rem;
+  height: 70px;
+  z-index: 999;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 70px;
+}
+
+header .logo {
+  font-family: 'Rubik Vinyl', cursive;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 100px;
+  font-size: 3rem;
+}
+
+.logo:hover {
+  color: rgb(159,103,193);
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger {
+  margin-right: 100px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  position: relative;
+  width: 30px;
+  height: 2px;
+  margin: 6px;
+  transition: 0.5s;
+  background-color: white;
+  border-radius: 10px;
+}
+.body.active .l1 {
+  transform: rotate(405deg) translateY(10px);
+}
+.body.active .l2 {
+  transform: rotate(405deg) translateY(4.4px) translateX(-5.6px);
+}
+.body.active .l3 {
+  transform: rotate(315deg) translateY(-11px);
+}
