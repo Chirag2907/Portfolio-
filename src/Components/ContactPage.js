@@ -9,8 +9,12 @@ import "react-toastify/dist/ReactToastify.css";
 const ContactPage = (props) => {
   const notify = () => toast("Thank you for reaching out! :)");
 
-  const nameAlert = () => { toast("Enter your name!") }
-  const emailAlert = () => { toast("Enter your email!") }
+  const nameAlert = () => {
+    toast("Enter your name!");
+  };
+  const emailAlert = () => {
+    toast("Enter your email!");
+  };
 
   const handleContact2 = (e) => {
     let contact = document.querySelector(".contact");
@@ -28,7 +32,7 @@ const ContactPage = (props) => {
 
   const handleSubmit = async () => {
     if (newName === "") {
-      console.log("here")
+      console.log("here");
       nameAlert();
       return;
     }
@@ -62,8 +66,12 @@ const ContactPage = (props) => {
         pauseOnHover
         theme="dark"
       />
+
       <main onClick={handleContact2} className="contact">
-        <h1 className="text-purple-400 mx-auto mt-24 h-16 font-mono">GET IN TOUCH</h1>
+        <div className="contact-bookmark rounded text-black"><b>CONTACT</b></div>
+        <h1 className="text-purple-400 mx-auto mt-10 h-16 font-mono">
+          GET IN TOUCH
+        </h1>
         <div action="#" className="space-y-8 mx-auto w-1/3 ">
           <div>
             <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">

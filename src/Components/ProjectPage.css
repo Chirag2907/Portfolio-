@@ -42,3 +42,18 @@
       translateY(3rem) rotateY(30deg) scale(0.5);
   }
 }
+
+.project-bookmark{
+  position: relative;
+  border:rgb(92, 8, 92);
+  background-color: antiquewhite;
+  width: 10rem;
+  height: 3rem;
+  top:3.5rem;
+  left: -6.5rem;
+  transform: rotate(-90deg) perspective(1300px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}

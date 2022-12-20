@@ -14,6 +14,7 @@ const ProjectPage = (props) => {
   return (
     <div>
       <main onClick={handleProject2} className="project">
+      <div className="project-bookmark rounded text-black"><b>PROJECTS</b></div>
         <div className="project-inner">
           <h1>Projects</h1>
           <br />

@@ -15,6 +15,7 @@ const AboutPage = (props) => {
   return (
     <div>
       <main onClick={handleAbout2} className="about">
+      <div className="about-bookmark rounded text-black"><b>ABOUT</b></div>
         <div className="about-inner">
           <h1>About</h1>
           <span className="content"></span>

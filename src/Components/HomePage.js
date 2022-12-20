@@ -19,6 +19,7 @@ const HomePage = (props) => {
     <div>
       
       <main onClick={handleHome2} className="home">
+      <div className="home-bookmark rounded text-black"><b>HOME</b></div>
         <div className="home-inner">
           <div className="textt">
             <h1 className="title text-7xl mt-5">
