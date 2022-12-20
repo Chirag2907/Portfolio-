@@ -90,8 +90,8 @@ function App() {
 
   return (
     <div className="body">
-      <div class="cursor"></div>
-      <div class="cursor2"></div>
+      <div className="cursor"></div>
+      <div className="cursor2"></div>
       <NavBar func={handleHome}/>
       <NavMenu func1={handleHome} func2={handleProject} func3={handleAbout} func4={handleContact} />
 

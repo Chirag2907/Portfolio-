@@ -17,7 +17,7 @@ const AboutPage = (props) => {
       <main onClick={handleAbout2} className="about">
         <div className="about-inner">
           <h1>About</h1>
-          <span class="content"></span>
+          <span className="content"></span>
           <br />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
