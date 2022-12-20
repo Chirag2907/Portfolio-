@@ -9,6 +9,8 @@
     rotateY(30deg) scale(0.51);
 }
 
+
+
 .body.active .project {
   display: grid;
   align-content: space-between;

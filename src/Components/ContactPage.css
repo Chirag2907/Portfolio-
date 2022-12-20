@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
+
 .body.active .contact {
   display: grid;
   align-content: space-between;
@@ -53,4 +56,28 @@
     transform: perspective(1300px) translateX(-13rem) translateZ(60px)
       translateY(0rem) rotateY(30deg) scale(0.5);
   }
+}
+
+.contact{
+  background: linear-gradient(90deg, rgb(12,15,27) 2px, transparent 10%) center, linear-gradient(rgb(12,15,27) 2px, transparent 10%) center, black;
+  background-size: 10px 10px;
+
+}
+
+.input{
+  transition: 0.5s ease-in-out;
+}
+
+.input:focus{
+  box-shadow: 0 0 100px 20px rgb(92, 8, 92);
+  transition: 0.5s ease-in-out;
+}
+
+.textf{
+transition: 0.5s ease-in-out;
+}
+
+.textf:focus{
+  box-shadow: 0 0 100px 20px rgb(92, 8, 92);
+  transition: 0.2s ease-in-out;
 }
