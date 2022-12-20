@@ -81,3 +81,13 @@ transition: 0.5s ease-in-out;
   box-shadow: 0 0 100px 20px rgb(92, 8, 92);
   transition: 0.2s ease-in-out;
 }
+
+.submit-button{
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button:hover{
+  transform: scale(1.1);
+}

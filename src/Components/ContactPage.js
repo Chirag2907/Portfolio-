@@ -26,7 +26,9 @@ const ContactPage = (props) => {
               <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your message</label>
               <textarea id="message" rows="6" class="textf rounded p-2 text-black w-full" placeholder="Leave me a message..."></textarea>
           </div>
-         <button className="border p-2 rounded w-24 hover:bg-purple-600 bg-purple-500">Submit</button>
+          <div className="w-full submit-button ">
+          <button className="mr-0 p-2 rounded w-24 hover:bg-purple-600 bg-purple-500">Submit</button>
+          </div>
       </form>
       </main>
     </div>
