@@ -4,17 +4,9 @@ import './NavBar.css'
 const NavBar = (props) => {
   const handleHamburger = (e) => {
     let body = document.querySelector(".body");
-    let home = document.querySelector(".home");
-    let proj = document.querySelector(".project");
-    let about = document.querySelector(".about");
-    let contact = document.querySelector(".contact");
 
     if (!body.classList.contains("active")) {
       body.classList.toggle("active");
-      home.classList.remove("active-home");
-      about.classList.remove("active-about");
-      contact.classList.remove("active-contact");
-      proj.classList.remove("active-proj");
     } else {
       body.classList.remove("active");
     }

@@ -18,7 +18,7 @@ const HomePage = (props) => {
   return (
     <div>
       
-      <main onClick={handleHome2} className="home">
+      <main onClick={handleHome2} className="home first">
       <div className="home-bookmark rounded text-black"><b>HOME</b></div>
         <div className="home-inner">
           <div className="textt">

@@ -1,28 +1,3 @@
-.body.active .contact {
-  display: grid;
-  align-content: space-between;
-  opacity: 0.4;
-  border-width: 2px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 10px;
-  animation: animate-contact 0.5s linear;
-  transform: perspective(1300px) translateX(-13rem) translateZ(60px)
-    translateY(0rem) rotateY(30deg) scale(0.5);
-  z-index: 98;
-}
-
-.body.active .contact.hover-contact {
-  opacity: 1;
-  transform: perspective(1300px) translateX(-14rem) translateY(-2.5rem)
-    rotateY(30deg) scale(0.515);
-}
-
-.body.active .contact:hover {
-  opacity: 1;
-  transform: perspective(1300px) translateX(-14rem) translateY(-2.5rem)
-    rotateY(30deg) scale(0.515);
-}
 
 .contact.active-contact {
   z-index: 102;
@@ -37,33 +12,8 @@
   top:0rem;
 }
 
-@keyframes animate-contact {
-  0% {
-    transform: scale(1);
-    display: grid;
-    place-content: center;
-  }
-  50% {
-    transform: perspective(1300px) translateX(-7rem) translateY(4.5rem)
-      rotateY(30deg) scale(0.5);
-    display: grid;
-    place-content: center;
-  }
-  100% {
-    transform: perspective(1300px) translateX(-13rem) translateZ(60px)
-      translateY(0rem) rotateY(30deg) scale(0.5);
-  }
-}
-
-.contact{
-  background: linear-gradient(90deg, rgb(12,15,27) 2px, transparent 10%) center, linear-gradient(rgb(12,15,27) 2px, transparent 10%) center, black;
-  background-size: 10px 10px;
-
-}
-
 .input{
   transition: 0.5s ease-in-out;
-  
 }
 
 input, textarea{
@@ -111,4 +61,11 @@ transition: 0.5s ease-in-out;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+}
+
+.contact-gif{
+  position: fixed;
+  top:5rem;
+  right: 8rem;
+  transform: scale(1.1);
 }

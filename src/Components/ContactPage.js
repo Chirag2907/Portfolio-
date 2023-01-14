@@ -5,6 +5,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase-config";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+// import gif from "./contactVector.gif";
 
 const ContactPage = (props) => {
   const notify = () => toast("Thank you for reaching out! :)");
@@ -56,7 +57,7 @@ const ContactPage = (props) => {
     <div>
       <ToastContainer
         position="top-right"
-        autoClose={5000}
+        autoClose={1500}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
@@ -67,7 +68,7 @@ const ContactPage = (props) => {
         theme="dark"
       />
 
-      <main onClick={handleContact2} className="contact">
+      <main onClick={handleContact2} className="contact fourth">
         <div className="contact-bookmark rounded text-black"><b>CONTACT</b></div>
         <h1 className="text-purple-400 mx-auto mt-10 h-16 font-mono">
           GET IN TOUCH
@@ -128,6 +129,7 @@ const ContactPage = (props) => {
               Submit
             </button>
           </div>
+            {/* <img className="contact-gif" src={gif} width={500} height={500} alt="img"></img> */}
         </div>
       </main>
     </div>

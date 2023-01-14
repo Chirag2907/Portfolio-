@@ -25,6 +25,7 @@ function App() {
     contact.classList.remove("active-contact");
     proj.classList.remove("active-proj");
     home.classList.add("active-home");
+    changeOrder("home");
   };
   const handleProject = () => {
     SelectQueries();
@@ -33,6 +34,7 @@ function App() {
     about.classList.remove("active-about");
     contact.classList.remove("active-contact");
     proj.classList.add("active-proj");
+    changeOrder("project")
   };
 
   const handleAbout = () => {
@@ -42,6 +44,7 @@ function App() {
     proj.classList.remove("active-proj");
     home.classList.remove("active-home");
     about.classList.add("active-about");
+    changeOrder("about");
   };
 
   const handleContact = () => {
@@ -51,6 +54,7 @@ function App() {
     home.classList.remove("active-home");
     about.classList.remove("active-about");
     contact.classList.add("active-contact");
+    changeOrder("contact");
   };
   useEffect(() => {
     var cursor = document.querySelector(".cursor");
@@ -87,6 +91,66 @@ function App() {
       });
     });
   }, []);
+
+  const removeClasses = (page) => {
+    let homePage = document.querySelector(".home");
+    let projPage = document.querySelector(".project");
+    let aboutPage = document.querySelector(".about");
+    let contactPage = document.querySelector(".contact");
+    
+    homePage.classList.remove("first");
+    homePage.classList.remove("second");
+    homePage.classList.remove("third");
+    homePage.classList.remove("fourth");
+    projPage.classList.remove("first");
+    projPage.classList.remove("second");
+    projPage.classList.remove("third");
+    projPage.classList.remove("fourth");
+    aboutPage.classList.remove("first");
+    aboutPage.classList.remove("second");
+    aboutPage.classList.remove("third");
+    aboutPage.classList.remove("fourth");
+    contactPage.classList.remove("first");
+    contactPage.classList.remove("second");
+    contactPage.classList.remove("third");
+    contactPage.classList.remove("fourth");
+  }
+
+  const changeOrder = (page) => { 
+    let homePage = document.querySelector(".home");
+    let projPage = document.querySelector(".project");
+    let aboutPage = document.querySelector(".about");
+    let contactPage = document.querySelector(".contact");
+
+    if(page==="project"){
+      removeClasses(page);
+      projPage.classList.add("first");
+      homePage.classList.add("second");
+      aboutPage.classList.add("third");
+      contactPage.classList.add("fourth");
+    }
+    else if(page==="home"){
+      removeClasses(page);
+      homePage.classList.add("first");
+      projPage.classList.add("second");
+      aboutPage.classList.add("third");
+      contactPage.classList.add("fourth");
+    }
+    else if(page==="about"){
+      removeClasses(page);
+      aboutPage.classList.add("first");
+      homePage.classList.add("second");
+      projPage.classList.add("third");
+      contactPage.classList.add("fourth");
+    }
+    else if(page==="contact"){
+      removeClasses(page);
+      contactPage.classList.add("first");
+      homePage.classList.add("second");
+      projPage.classList.add("third");
+      aboutPage.classList.add("fourth");
+    }
+   }
 
   return (
     <div className="body">
