@@ -6,7 +6,7 @@ const AboutPage = (props) => {
   const handleAbout2 = (e) => {
     let about = document.querySelector(".about");
     if (about.classList.contains("active-about")) {
-      console.log("first");
+      // console.log("first");
     } else {
       props.func();
     }
@@ -14,7 +14,7 @@ const AboutPage = (props) => {
 
   return (
     <div>
-      <main onClick={handleAbout2} className="about">
+      <main onClick={handleAbout2} className="about third">
       <div className="about-bookmark rounded text-black"><b>ABOUT</b></div>
         <div className="about-inner">
           <h1>About</h1>

@@ -27,9 +27,164 @@ background-size: 22px 22px;
   height: 100vh;
   display: grid;
   transform-style: preserve-3d;
+  background: linear-gradient(90deg, rgb(12,15,27) 2px, transparent 1%) center, linear-gradient(rgb(12,15,27) 2px, transparent 1%) center, black;
+  background-size: 10px 10px;
+
   transition: 0.5s;
+  /* z-index: 101; */
+}
+
+.body.active .first{
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  animation: first-animation 0.5s ease-in-out;
+  transform: perspective(1300px) translateX(-7rem) translateY(4.5rem)
+    rotateY(30deg) scale(0.5);
   z-index: 101;
 }
+.body.active .first:hover {
+  opacity: 1;
+  transform: perspective(1300px) translateX(-6.7rem) translateY(2.5rem)
+    rotateY(30deg) scale(0.51);
+}
+.body.active .first.hover-first {
+  opacity: 1;
+  transform: perspective(1300px) translateX(-6.7rem) translateY(2.5rem)
+    rotateY(30deg) scale(0.51);
+}
+
+.body.active .second{
+  opacity: 0.8;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  animation: second-animation 0.7s ease-in-out;
+  transform: perspective(1300px) translateX(-9rem) translateZ(20px)
+    translateY(3rem) rotateY(30deg) scale(0.5);
+  z-index: 100;
+}
+.body.active .second:hover {
+  opacity: 1;
+  transform: perspective(1300px) translateX(-9rem) translateY(0.5rem)
+    rotateY(30deg) scale(0.51);
+}
+.body.active .second.hover-second {
+  opacity: 1;
+  transform: perspective(1300px) translateX(-9rem) translateY(0.5rem)
+    rotateY(30deg) scale(0.51);
+}
+
+
+.body.active .third{
+  opacity: 0.6;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  animation: third-animation 0.8s ease-in-out;
+  transform: perspective(1300px) translateX(-11rem) translateZ(40px)
+    translateY(1.5rem) rotateY(30deg) scale(0.5);
+  z-index: 99;
+}
+.body.active .third:hover {
+  opacity: 1;
+  transform: perspective(1300px) translateX(-11.5rem) translateY(-1rem)
+    rotateY(30deg) scale(0.51);
+}
+.body.active .third.hover-third {
+  opacity: 1;
+  transform: perspective(1300px) translateX(-11.5rem) translateY(-1rem)
+    rotateY(30deg) scale(0.51);
+}
+
+.body.active .fourth{
+  opacity: 0.4;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  animation: fourth-animation 0.9s ease-in-out;
+  transform: perspective(1300px) translateX(-13rem) translateZ(60px)
+    translateY(0rem) rotateY(30deg) scale(0.5);
+  z-index: 98;
+}
+.body.active .fourth:hover {
+  opacity: 1;
+  transform: perspective(1300px) translateX(-14rem) translateY(-2.5rem)
+    rotateY(30deg) scale(0.515);
+}
+.body.active .fourth.hover-fourth {
+  opacity: 1;
+  transform: perspective(1300px) translateX(-14rem) translateY(-2.5rem)
+    rotateY(30deg) scale(0.515);
+}
+
+
+
+@keyframes first-animation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: perspective(1300px) translateX(-7rem) translateY(4.5rem)
+      rotateY(30deg) scale(0.5);
+  }
+}
+@keyframes second-animation {
+  0% {
+    transform: scale(1);
+    display: grid;
+    place-content: center;
+  }
+  50% {
+    transform: perspective(1300px) translateX(-7rem) translateY(4.5rem)
+      rotateY(30deg) scale(0.5);
+    display: grid;
+    place-content: center;
+  }
+  100% {
+    transform: perspective(1300px) translateX(-9rem) translateZ(20px)
+      translateY(3rem) rotateY(30deg) scale(0.5);
+  }
+}
+@keyframes third-animation {
+  0% {
+    transform: scale(1);
+    display: grid;
+    place-content: center;
+  }
+  50% {
+    transform: perspective(1300px) translateX(-7rem) translateY(4.5rem)
+      rotateY(30deg) scale(0.5);
+    display: grid;
+    place-content: center;
+  }
+  100% {
+    transform: perspective(1300px) translateX(-11rem) translateZ(40px)
+      translateY(1.5rem) rotateY(30deg) scale(0.5);
+  }
+}
+@keyframes fourth-animation {
+  0% {
+    transform: scale(1);
+    display: grid;
+    place-content: center;
+  }
+  50% {
+    transform: perspective(1300px) translateX(-7rem) translateY(4.5rem)
+      rotateY(30deg) scale(0.5);
+    display: grid;
+    place-content: center;
+  }
+  100% {
+    transform: perspective(1300px) translateX(-13rem) translateZ(60px)
+      translateY(0rem) rotateY(30deg) scale(0.5);
+  }
+}
+
 
 
 .cursor {
