@@ -21,7 +21,7 @@ const AboutPage = (props) => {
           <span className="content"></span>
           <br />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+            Lorem ipsum dolor sit  amet consectetur adipisicing elit. Error,
             minima.
           </p>
         </div>
