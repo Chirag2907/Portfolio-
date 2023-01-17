@@ -48,11 +48,15 @@ background-size: 22px 22px;
   opacity: 1;
   transform: perspective(1300px) translateX(-6.7rem) translateY(2.5rem)
     rotateY(30deg) scale(0.51);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 .body.active .first.hover-first {
   opacity: 1;
   transform: perspective(1300px) translateX(-6.7rem) translateY(2.5rem)
     rotateY(30deg) scale(0.51);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 
 .body.active .second{
@@ -70,11 +74,15 @@ background-size: 22px 22px;
   opacity: 1;
   transform: perspective(1300px) translateX(-9rem) translateY(0.5rem)
     rotateY(30deg) scale(0.51);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 .body.active .second.hover-second {
   opacity: 1;
   transform: perspective(1300px) translateX(-9rem) translateY(0.5rem)
     rotateY(30deg) scale(0.51);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 
 
@@ -93,11 +101,15 @@ background-size: 22px 22px;
   opacity: 1;
   transform: perspective(1300px) translateX(-11.5rem) translateY(-1rem)
     rotateY(30deg) scale(0.51);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 .body.active .third.hover-third {
   opacity: 1;
   transform: perspective(1300px) translateX(-11.5rem) translateY(-1rem)
     rotateY(30deg) scale(0.51);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 
 .body.active .fourth{
@@ -115,11 +127,15 @@ background-size: 22px 22px;
   opacity: 1;
   transform: perspective(1300px) translateX(-14rem) translateY(-2.5rem)
     rotateY(30deg) scale(0.515);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 .body.active .fourth.hover-fourth {
   opacity: 1;
   transform: perspective(1300px) translateX(-14rem) translateY(-2.5rem)
     rotateY(30deg) scale(0.515);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 
 
@@ -221,6 +237,7 @@ background-size: 22px 22px;
 .hover {
   background-color: rgb(183, 174, 174);
   opacity: 0.5;
+  
 }
 
 .cursorinnerhover {

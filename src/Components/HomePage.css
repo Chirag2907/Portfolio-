@@ -67,9 +67,6 @@
   display: inline-block;
   transition: transform 0.15s ease;
 }
-.letter:hover{
-  transform: scaleX(0.6) scaleY(1.4);
-}
 
 .home{
   background: linear-gradient(90deg, rgb(12,15,27) 2px, transparent 1%) center, linear-gradient(rgb(12,15,27) 2px, transparent 1%) center, black;
@@ -90,4 +87,38 @@
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+}
+
+.jelly{
+  animation: jelly 1s infinite;
+}
+
+@keyframes jelly {
+  0% {
+    transform: scale(1, 1);
+  }
+  30%{
+    transform: scale(1.2, 0.8);
+  }
+  40%{
+    transform: scale(0.8, 1.2);
+  }
+  50%{
+    transform: scale(1.1, 0.9);
+  }
+  60%{
+    transform: scale(0.9, 1.1);
+  }
+  70%{
+    transform: scale(1.05, 0.95);
+  }
+  80%{
+    transform: scale(0.95, 1.05);
+  }
+  90%{
+    transform: scale(1.02, 0.98);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }

@@ -15,6 +15,18 @@ const HomePage = (props) => {
     }
   };
 
+  const letterBounce = (x) => { 
+    let letter = document.querySelector('.'+x);
+    if(letter.classList.contains('jelly')){
+      return;
+    }
+    letter.classList.add('jelly');
+    setTimeout(() => {
+      letter.classList.remove('jelly');
+    }, 1000);
+   }
+   let a='a', b='b', c='c', d='d', e='e', f='f', g='g', h='h', i='i', j='j', k='k', l='l', m='m', n='n', o='o';
+
   return (
     <div>
       
@@ -23,23 +35,23 @@ const HomePage = (props) => {
         <div className="home-inner">
           <div className="textt">
             <h1 className="title text-7xl mt-5">
-              <span className="letter">H</span>
-              <span className="letter">e</span>
-              <span className="letter">l</span>
-              <span className="letter">l</span>
-              <span className="letter">o</span>
-              <span className="letter">!</span>
+              <span onMouseOver={()=>letterBounce(a)} className="letter a">H</span>
+              <span onMouseOver={()=>letterBounce(b)} className="letter b">e</span>
+              <span onMouseOver={()=>letterBounce(c)} className="letter c">l</span>
+              <span onMouseOver={()=>letterBounce(d)} className="letter d">l</span>
+              <span onMouseOver={()=>letterBounce(e)} className="letter e">o</span>
+              <span onMouseOver={()=>letterBounce(f)} className="letter f">!</span>
               <span>{'\u00A0'}</span>
-              <span className="letter text-purple-400">I</span>
-              <span className="letter text-purple-400">'</span>
-              <span className="letter text-purple-400">m</span>
+              <span onMouseOver={()=>letterBounce(g)} className="letter g text-purple-400">I</span>
+              <span onMouseOver={()=>letterBounce(h)} className="letter h text-purple-400">'</span>
+              <span onMouseOver={()=>letterBounce(i)} className="letter i text-purple-400">m</span>
               <span>{'\u00A0'}</span>
-              <span className="letter text-purple-400">C</span>
-              <span className="letter text-purple-400">h</span>
-              <span className="letter text-purple-400">i</span>
-              <span className="letter text-purple-400">r</span>
-              <span className="letter text-purple-400">a</span>
-              <span className="letter text-purple-400">g</span>
+              <span onMouseOver={()=>letterBounce(j)} className="letter j text-purple-400">C</span>
+              <span onMouseOver={()=>letterBounce(k)} className="letter k text-purple-400">h</span>
+              <span onMouseOver={()=>letterBounce(l)} className="letter l text-purple-400">i</span>
+              <span onMouseOver={()=>letterBounce(m)} className="letter m text-purple-400">r</span>
+              <span onMouseOver={()=>letterBounce(n)} className="letter n text-purple-400">a</span>
+              <span onMouseOver={()=>letterBounce(o)} className="letter o text-purple-400">g</span>
             </h1>
 
             <h4 className="text-3xl text-purple-400">

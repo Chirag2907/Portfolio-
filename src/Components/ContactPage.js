@@ -53,6 +53,19 @@ const ContactPage = (props) => {
     setNewName("");
   };
 
+  const letterBounce = (x) => { 
+    let letter = document.querySelector("."+x);
+    if(letter.classList.contains('jelly')){
+      return;
+    }
+    letter.classList.add('jelly');
+    setTimeout(() => {
+      letter.classList.remove('jelly');
+    }, 1000);
+   }
+
+   let a="aa", b="bb", c="cc", d="dd", e="ee", f="ff", g="gg", h="hh", i="ii", j="jj", k="kk", l="ll";
+
   return (
     <div>
       <ToastContainer
@@ -71,7 +84,18 @@ const ContactPage = (props) => {
       <main onClick={handleContact2} className="contact fourth">
         <div className="contact-bookmark rounded text-black"><b>CONTACT</b></div>
         <h1 className="text-purple-400 mx-auto mt-10 h-16 font-mono">
-          GET IN TOUCH
+          <span onMouseOver={()=>letterBounce(a)} className="letter aa">G</span>
+          <span onMouseOver={()=>letterBounce(b)} className="letter bb">E</span>
+          <span onMouseOver={()=>letterBounce(c)} className="letter cc">T</span>
+          <span>{'\u00A0'}</span>
+          <span onMouseOver={()=>letterBounce(e)} className="letter ee">I</span>
+          <span onMouseOver={()=>letterBounce(f)} className="letter ff">N</span>
+          <span>{'\u00A0'}</span>
+          <span onMouseOver={()=>letterBounce(h)} className="letter hh">T</span>
+          <span onMouseOver={()=>letterBounce(i)} className="letter ii">O</span>
+          <span onMouseOver={()=>letterBounce(j)} className="letter jj">U</span>
+          <span onMouseOver={()=>letterBounce(k)} className="letter kk">C</span>
+          <span onMouseOver={()=>letterBounce(l)} className="letter ll">H</span>
         </h1>
         <div action="#" className="space-y-8 mx-auto w-1/3 ">
           <div>
