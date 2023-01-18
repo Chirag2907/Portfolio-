@@ -19,5 +19,55 @@
 }
 
 .text-sphere{
+  position: fixed;
   margin-left: 50rem;
+  top:4rem;
+}
+
+.letter {
+  will-change: transform;
+  cursor: default;
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+.jelly{
+  animation: jelly 1s infinite;
+}
+
+@keyframes jelly {
+  0% {
+    transform: scale(1, 1);
+  }
+  30%{
+    transform: scale(1.2, 0.8);
+  }
+  40%{
+    transform: scale(0.8, 1.2);
+  }
+  50%{
+    transform: scale(1.1, 0.9);
+  }
+  60%{
+    transform: scale(0.9, 1.1);
+  }
+  70%{
+    transform: scale(1.05, 0.95);
+  }
+  80%{
+    transform: scale(0.95, 1.05);
+  }
+  90%{
+    transform: scale(1.02, 0.98);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.headingtitle{
+position: fixed;
+top: 12rem;
+left: 8rem;
+font-size: 3rem;
+
 }
