@@ -99,7 +99,7 @@ const AboutPage = (props) => {
               "Git",
               "HTML",
               "CSS",
-              "Bootstrap",
+              "Bootstrap" ,
               "Tailwind CSS",
               "Firebase",
               "Linux",
