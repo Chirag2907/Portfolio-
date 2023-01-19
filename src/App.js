@@ -121,7 +121,7 @@ function App() {
     let projPage = document.querySelector(".project");
     let aboutPage = document.querySelector(".about");
     let contactPage = document.querySelector(".contact");
-
+    
     if(page==="project"){
       removeClasses(page);
       projPage.classList.add("first");
@@ -160,7 +160,7 @@ function App() {
       <NavMenu func1={handleHome} func2={handleProject} func3={handleAbout} func4={handleContact} />
 
       <ContactPage func={handleContact}/>
-      <AboutPage func={handleAbout} func2={handleContact}/>
+      <AboutPage func={handleAbout} func2={changeOrder} func3={handleContact}/>
       <ProjectPage func={handleProject}/>
       <HomePage func={handleHome}/>
       

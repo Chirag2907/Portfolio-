@@ -9,8 +9,7 @@ import insta from "./instagram.png"
 const HomePage = (props) => {
   const handleHome2 = (e) => {
     let body = document.querySelector(".body");
-    let home = document.querySelector(".home");
-    if (home.classList.contains("active-home") && !body.classList.contains("active")) {
+    if (!body.classList.contains("active")) {
     } else {
       props.func();
     }

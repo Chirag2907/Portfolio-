@@ -4,9 +4,7 @@ import { TagCloud } from "@frank-mayer/react-tag-cloud";
 const AboutPage = (props) => {
   const handleAbout2 = (e) => {
     let body = document.querySelector(".body");
-    let about = document.querySelector(".about");
     if (
-      about.classList.contains("active-about") &&
       !body.classList.contains("active")
     ) {
       // console.log("first");
@@ -37,6 +35,10 @@ const AboutPage = (props) => {
     j = "jjj",
     k = "kkk";
 
+    const connect = () => {
+      console.log("clicked")
+      props.func3();
+    }
 
   return (
     <div>
@@ -95,7 +97,7 @@ const AboutPage = (props) => {
               programmer. I have a knack for problem solving which helps me come
               up with creative solutions to problems.
             </p>
-            <span onClick={props.func2} className="connect text-purple-400 font-mono mx-2 text-xl">
+            <span onClick={connect} className="connect text-purple-400 font-mono text-xl">
               Let's connect!
             </span>
           </div>

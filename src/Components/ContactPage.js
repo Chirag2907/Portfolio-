@@ -19,8 +19,7 @@ const ContactPage = (props) => {
 
   const handleContact2 = (e) => {
     let body = document.querySelector(".body");
-    let contact = document.querySelector(".contact");
-    if (contact.classList.contains("active-contact") && !body.classList.contains("active")) {
+    if (!body.classList.contains("active")) {
     } else {
       props.func();
     }
