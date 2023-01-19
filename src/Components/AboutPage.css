@@ -61,11 +61,11 @@
   }
 }
 
-.text-sphere{
-  position: fixed;
+/* .text-sphere{
+  position: absolute;
   top:4rem;
   right: 4rem;
-}
+} */
 
 .headingtitle{
   font-family: 'Bad Script', cursive;
@@ -87,4 +87,36 @@
 }
 .connect:hover{
   color: rgb(182, 113, 182);
+}
+
+.slide{
+  animation: slide 1s ease-in-out;
+}
+
+.about-inner .text-sphere{
+  position: fixed;
+  top:4rem;
+  right: 4rem;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slide-contact{
+  animation: slide-contact 1s ease-in-out;
+}
+
+@keyframes slide-contact {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

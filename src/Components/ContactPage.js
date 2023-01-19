@@ -82,7 +82,7 @@ const ContactPage = (props) => {
       />
 
       <main onClick={handleContact2} className="contact fourth">
-        <div className="contact-bookmark rounded text-black"><b>CONTACT</b></div>
+        <div className="contact-inner contact-bookmark rounded text-black"><b>CONTACT</b></div>
         <h1 className="text-purple-400 mx-auto mt-10 h-16 font-mono">
           <span onMouseOver={()=>letterBounce(a)} className="letter aa">G</span>
           <span onMouseOver={()=>letterBounce(b)} className="letter bb">E</span>

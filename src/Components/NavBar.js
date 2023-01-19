@@ -4,7 +4,6 @@ import './NavBar.css'
 const NavBar = (props) => {
   const handleHamburger = (e) => {
     let body = document.querySelector(".body");
-
     if (!body.classList.contains("active")) {
       body.classList.add("active");
     } else {
