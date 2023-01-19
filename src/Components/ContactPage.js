@@ -18,8 +18,9 @@ const ContactPage = (props) => {
   };
 
   const handleContact2 = (e) => {
+    let body = document.querySelector(".body");
     let contact = document.querySelector(".contact");
-    if (contact.classList.contains("active-contact")) {
+    if (contact.classList.contains("active-contact") && !body.classList.contains("active")) {
     } else {
       props.func();
     }
@@ -64,7 +65,7 @@ const ContactPage = (props) => {
     }, 1000);
    }
 
-   let a="aa", b="bb", c="cc", d="dd", e="ee", f="ff", g="gg", h="hh", i="ii", j="jj", k="kk", l="ll";
+   let a="aa", b="bb", c="cc", e="ee", f="ff", h="hh", i="ii", j="jj", k="kk", l="ll";
 
   return (
     <div>

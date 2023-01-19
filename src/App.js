@@ -160,7 +160,7 @@ function App() {
       <NavMenu func1={handleHome} func2={handleProject} func3={handleAbout} func4={handleContact} />
 
       <ContactPage func={handleContact}/>
-      <AboutPage func={handleAbout}/>
+      <AboutPage func={handleAbout} func2={handleContact}/>
       <ProjectPage func={handleProject}/>
       <HomePage func={handleHome}/>
       

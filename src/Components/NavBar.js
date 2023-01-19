@@ -6,7 +6,7 @@ const NavBar = (props) => {
     let body = document.querySelector(".body");
 
     if (!body.classList.contains("active")) {
-      body.classList.toggle("active");
+      body.classList.add("active");
     } else {
       body.classList.remove("active");
     }

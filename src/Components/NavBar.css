@@ -41,11 +41,11 @@ header .logo {
   border-radius: 10px;
 }
 .body.active .l1 {
-  transform: rotate(405deg) translateY(10px);
+  transform: rotate(405deg) translateY(10px) ;
 }
 .body.active .l2 {
-  transform: rotate(405deg) translateY(4.4px) translateX(-5.6px);
+  transform: rotate(405deg) translateY(4.4px) translateX(-5px);
 }
 .body.active .l3 {
-  transform: rotate(315deg) translateY(-11px);
+  transform: rotate(315deg) translateY(-11px) ;
 }

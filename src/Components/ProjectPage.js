@@ -4,8 +4,9 @@ import './ProjectPage.css';
 const ProjectPage = (props) => {
 
   const handleProject2 = (e) => {
+    let body = document.querySelector(".body");
     let project = document.querySelector(".project");
-    if (project.classList.contains("active-proj")) {
+    if (project.classList.contains("active-proj") && !body.classList.contains("active")) {
       // console.log("clicked");
     } else {
       props.func();

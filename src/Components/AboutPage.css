@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 
 .about.active-about {
   z-index: 102;
@@ -18,11 +19,7 @@
   font-size: 1.5rem;
 }
 
-.text-sphere{
-  position: fixed;
-  margin-left: 50rem;
-  top:4rem;
-}
+
 
 .letter {
   will-change: transform;
@@ -64,10 +61,30 @@
   }
 }
 
-.headingtitle{
-position: fixed;
-top: 12rem;
-left: 8rem;
-font-size: 3rem;
+.text-sphere{
+  position: fixed;
+  top:4rem;
+  right: 4rem;
+}
 
+.headingtitle{
+  font-family: 'Bad Script', cursive;
+  font-weight: bold;
+  margin-top: -2rem;
+  margin-left: 10rem;
+  font-size: 3rem;
+}
+
+.abouttext{
+  margin-top: 1.5rem;
+  margin-left: 10rem;
+  width: 30rem;
+  font-size: 1.1rem;
+}
+
+.connect{
+  cursor: pointer;
+}
+.connect:hover{
+  color: rgb(182, 113, 182);
 }
