@@ -44,7 +44,7 @@ const AboutPage = (props) => {
           <b>ABOUT</b>
         </div>
         <div className="about-inner">
-          <div className="headingtitle text-purple-400">
+          <div className="headingtitle text-6xl text-purple-400">
             <span onMouseOver={() => letterBounce(a)} className="letter aaa">
               M
             </span>
@@ -83,7 +83,7 @@ const AboutPage = (props) => {
               I
             </span>
           </div>
-          <div className="abouttext">
+          <div className="ff abouttext">
             <p>
               I am a sophomore at the Netaji Subhas University of Technology. I
               am passionate about learning new technologies and applying them to
@@ -97,15 +97,15 @@ const AboutPage = (props) => {
             <p></p>
             <span
               onClick={connect}
-              className="connect text-purple-400 font-mono text-xl"
+              className="connect text-purple-400 tracking-wider text-xl"
             >
               Let's connect!
             </span>
           </div>
           <TagCloud
-            className="text-sphere text-xl text-purple-400"
+            className="ff font-bold text-sphere text-xl text-purple-400"
             options={(w: Window & typeof globalThis): TagCloudOptions => ({
-              radius: Math.min(650, w.innerWidth, w.innerHeight) / 2,
+              radius: Math.min(600, w.innerWidth, w.innerHeight) / 2,
               maxSpeed: "fast",
             })}
           >

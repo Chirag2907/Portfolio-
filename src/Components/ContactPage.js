@@ -64,7 +64,7 @@ const ContactPage = (props) => {
     }, 1000);
    }
 
-   let a="aa", b="bb", c="cc", e="ee", f="ff", h="hh", i="ii", j="jj", k="kk", l="ll";
+   let a="aa", b="bb", c="cc", e="ee", f="fff", h="hh", i="ii", j="jj", k="kk", l="ll";
 
   return (
     <div>
@@ -83,13 +83,13 @@ const ContactPage = (props) => {
 
       <main onClick={handleContact2} className="contact fourth">
         <div className="contact-inner contact-bookmark rounded text-black"><b>CONTACT</b></div>
-        <h1 className="text-purple-400 mx-auto mt-10 h-16 font-mono">
+        <h1 className="text-purple-400 ff font-bold mx-auto mt-10 h-16 font-mono">
           <span onMouseOver={()=>letterBounce(a)} className="letter aa">G</span>
           <span onMouseOver={()=>letterBounce(b)} className="letter bb">E</span>
           <span onMouseOver={()=>letterBounce(c)} className="letter cc">T</span>
           <span>{'\u00A0'}</span>
           <span onMouseOver={()=>letterBounce(e)} className="letter ee">I</span>
-          <span onMouseOver={()=>letterBounce(f)} className="letter ff">N</span>
+          <span onMouseOver={()=>letterBounce(f)} className="letter fff">N</span>
           <span>{'\u00A0'}</span>
           <span onMouseOver={()=>letterBounce(h)} className="letter hh">T</span>
           <span onMouseOver={()=>letterBounce(i)} className="letter ii">O</span>

@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
 
 .about.active-about {
   z-index: 102;
@@ -61,18 +63,13 @@
   }
 }
 
-/* .text-sphere{
-  position: absolute;
-  top:4rem;
-  right: 4rem;
-} */
-
 .headingtitle{
-  font-family: 'Bad Script', cursive;
+  /* font-family: 'Bad Script', cursive; */
+  font-family: 'Rubik Vinyl', cursive;
   font-weight: bold;
   margin-top: -2rem;
   margin-left: 10rem;
-  font-size: 3rem;
+  /* font-size: 4rem; */
 }
 
 .abouttext{
@@ -96,7 +93,7 @@
 .about-inner .text-sphere{
   position: fixed;
   top:4rem;
-  right: 4rem;
+  right:6rem;
 }
 
 @keyframes slide {

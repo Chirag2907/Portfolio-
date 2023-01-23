@@ -7,6 +7,7 @@ import ContactPage from "./Components/ContactPage";
 import NavBar from "./Components/NavBar";
 import NavMenu from "./Components/NavMenu";
 import { useEffect } from "react";
+import 'tw-elements';
 
 function App() {
   let body, home, proj, about, contact;

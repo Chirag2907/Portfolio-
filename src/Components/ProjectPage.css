@@ -16,3 +16,17 @@
   align-items: center;
   font-size: 1.5rem;
 }
+
+.project-inner{
+  /* margin-top: -15rem; */
+}
+
+.cardd{
+  transition: 0.3s;
+}
+
+.cardd:hover{
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 100px 10px rgb(92, 8, 92);
+}

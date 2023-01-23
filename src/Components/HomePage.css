@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 .home.active-home {
   z-index: 102;
+}
+
+.ff{
+  font-family: 'Montserrat', sans-serif;
 }
 
 
