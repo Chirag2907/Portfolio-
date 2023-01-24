@@ -12,7 +12,7 @@ html {
   /* background-image: url("bg.jpg"); */
   background-color: rgb(17, 2, 17);
   background: linear-gradient(90deg, rgb(17, 2, 17) 2px, transparent 1%) center, linear-gradient(rgb(17, 2, 17) 2px, transparent 1%) center, black;
-/* background-size: 22px 22px; */
+background-size: 2rem 2rem;
   /* remove scroll */
 }
 
@@ -22,13 +22,12 @@ html {
 .about {
   position: absolute;
   color: white;
-  background-color: rgb(12,15,27);
-  background-size: cover; 
   width: 95rem;
   height: 44rem;
   display: grid;
   transform-style: preserve-3d;
-  background: linear-gradient(90deg, rgb(12,15,27) 2px, transparent 1%) center, linear-gradient(rgb(12,15,27) 2px, transparent 1%) center, black;
+  background: linear-gradient(90deg, rgb(12,15,27) 2px, transparent 1%) center, linear-gradient(rgb(12,15,27) 2px, transparent 1%) center, rgb(0, 0, 0);
+  background-size: 1rem 1rem;
   transition: 0.5s;
   /* /* z-index: 101; */
 }

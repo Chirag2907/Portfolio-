@@ -73,11 +73,6 @@
   transition: transform 0.15s ease;
 }
 
-.home{
-  background: linear-gradient(90deg, rgb(12,15,27) 2px, transparent 1%) center, linear-gradient(rgb(12,15,27) 2px, transparent 1%) center, black;
-  background-size: 10px 10px;
-
-}
 
 .home-bookmark{
   position: relative;
