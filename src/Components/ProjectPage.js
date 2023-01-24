@@ -18,8 +18,6 @@ const ProjectPage = (props) => {
           <b>PROJECTS</b>
         </div>
         <div className="project-inner">
-          <h1>Projects</h1>
-
           <div class="m-4">
 
             <div class="cardd rounded bg-white max-w-sm ">
