@@ -3,7 +3,7 @@
 }
 
 .project-bookmark{
-  position: relative;
+  position: absolute;
   border:rgb(92, 8, 92);
   background-color: antiquewhite;
   width: 10rem;
@@ -17,82 +17,11 @@
   font-size: 1.5rem;
 }
 
-.project-inner{
-  /* margin-top: -15rem; */
-}
-
-.cardd{
-  /* -webkit-filter: grayscale(100%); Safari 6.0 - 9.0
-  filter: grayscale(100%); */
+.projects{
   position: relative;
-  background-color: #f1f2f2;
-}
-
-.cardd:hover{
-  -webkit-filter: grayscale(0%);
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0 0 100px 10px rgb(92, 8, 92);
-  transform: scale(1.05);
-}
-.asdasd{
-  font-weight: 900;
-}
-.asd{
-  font-weight: 700;
-  background-color: #f1f2f2;
-  
-}
-.showcard{
-  z-index: 800;
-  position: fixed;
-  top:6rem;
-  margin-left: 13rem;
-  height: 35rem;
-  width: 65rem;
-  transition: 0.3s ease-in-out;
-  animation: txtAnal 0.3s ease-in-out;
-
-}
-
-
-.blurMe{
-  z-index: 103;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; 
-  background-color: rgba(0,0,0,0.5);
-  backdrop-filter: blur(2px);
-}
-
-@keyframes txtAnal{
-  0%{
-    transform: scale(0.58) translate(-57.8rem,0) scaleX(0.62);
-
-
-  }
-  100%{
-    transform: scale(1) translate(0,0);
-  }
-}
-
-.txtasum{
- padding: 1rem;
-}
-
-.boldd{
-  font-weight: 900;
+  top: 10rem;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  place-items: center;
-
-
-
-}
-
-a{
-  color: darkblue;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin: 1rem;
 }

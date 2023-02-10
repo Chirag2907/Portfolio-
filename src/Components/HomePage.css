@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
 .home.active-home {
   z-index: 102;
@@ -120,5 +121,23 @@
   }
   100% {
     transform: scale(1, 1);
+  }
+}
+
+/* make this responsive */
+@media screen and (max-width: 1000px) {
+  .rectangle{
+    display: none;
+  }
+  .pfp{
+    display: none;
+  }
+  .textt{
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+  }
+  .desc{
+    width: 80%;
   }
 }

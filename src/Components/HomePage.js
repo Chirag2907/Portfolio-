@@ -70,7 +70,7 @@ const HomePage = (props) => {
               <img  draggable={false} className="links" onClick={()=>window.open('https://www.instagram.com/chirag.2907/', '_blank')} src={insta} width={40}  alt="img"/>
             </div>
           </div>
-          <img draggable={false} className="border pfp rounded" src={pic} width={250} alt="pic" />
+          <img draggable={false} loading="eager" className="border pfp rounded" src={pic} width={250} alt="pic" />
           <div className="rectangle border-solid border-2 border-purple-400  h-96 w-60"></div>
         </div>
       </main>

@@ -99,7 +99,7 @@ const ContactPage = (props) => {
         </h1>
         <div action="#" className="space-y-8 mx-auto w-1/3 ">
           <div>
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+            <label className="ff block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">
               Name<span className="text-red-400">*</span>
             </label>
             <input
@@ -109,13 +109,13 @@ const ContactPage = (props) => {
               }}
               type="text"
               id="name"
-              className="textf rounded p-2 text-black w-full"
+              className="ff textf rounded p-2 text-black w-full"
               placeholder="Enter your name"
               required
             />
           </div>
           <div>
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+            <label className="ff block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">
               Email<span className="text-red-400">*</span>
             </label>
             <input
@@ -125,13 +125,13 @@ const ContactPage = (props) => {
               }}
               type="email"
               id="email"
-              className="textf rounded p-2 text-black w-full"
+              className="textf ff rounded p-2 text-black w-full"
               placeholder="Enter your Email ID"
               required
             />
           </div>
-          <div className="sm:col-span-2">
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+          <div className="ff sm:col-span-2">
+            <label className="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">
               Your message
             </label>
             <textarea
