@@ -12,7 +12,7 @@ const Movieguessr = () => {
     };
     useEffect(() => {
       const iframe = document.createElement("iframe");
-      iframe.src = "https://chirag2907.github.io/guess-the-movie/";
+      iframe.src = "https://chirag2907.github.io/Guess-the-movie/";
       iframe.style.display = "none";
       document.body.appendChild(iframe);
       return () => {
