@@ -33,12 +33,11 @@ const Movieguessr = () => {
                 />
                 <div class="p-3">
                   <h5 class="ff font-black text-gray-900 text-xl font-medium mb-2 asdasd">
-                    <b>Text Analyzer</b>
+                    <b>Movie Guessr</b>
                   </h5>
                   <p class="ff text-black mb-2 asd">
-                    This website analyzes the text you enter and gives you a brief
-                    report about the text. The text is also sentimentally
-                    analyzed.
+                    This is a simple game where you have to guess the movie name letter by letter.
+                    The movies are fetched from an API.
                   </p>
                 </div>
               </div>
