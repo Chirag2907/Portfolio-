@@ -12,7 +12,8 @@ html {
   /* background-image: url("bg.jpg"); */
   background-color: rgb(17, 2, 17);
   background: linear-gradient(90deg, rgb(17, 2, 17) 2px, transparent 1%) center, linear-gradient(rgb(17, 2, 17) 2px, transparent 1%) center, black;
-background-size: 22px 22px;
+  background-size: 2rem 2rem;
+  /* remove scroll */
 }
 
 .home,
@@ -21,17 +22,14 @@ background-size: 22px 22px;
 .about {
   position: absolute;
   color: white;
-  background-color: rgb(12,15,27);
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
+  width: 95rem;
+  height: 44rem;
   display: grid;
   transform-style: preserve-3d;
-  background: linear-gradient(90deg, rgb(12,15,27) 2px, transparent 1%) center, linear-gradient(rgb(12,15,27) 2px, transparent 1%) center, black;
-  background-size: 10px 10px;
-
+  background: linear-gradient(90deg, rgb(12,15,27) 2px, transparent 1%) center, linear-gradient(rgb(12,15,27) 2px, transparent 1%) center, rgb(0, 0, 0);
+  background-size: 1rem 1rem;
   transition: 0.5s;
-  /* z-index: 101; */
+  /* /* z-index: 101; */
 }
 
 .body.active .first{
@@ -48,11 +46,15 @@ background-size: 22px 22px;
   opacity: 1;
   transform: perspective(1300px) translateX(-6.7rem) translateY(2.5rem)
     rotateY(30deg) scale(0.51);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 .body.active .first.hover-first {
   opacity: 1;
   transform: perspective(1300px) translateX(-6.7rem) translateY(2.5rem)
     rotateY(30deg) scale(0.51);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 
 .body.active .second{
@@ -70,11 +72,15 @@ background-size: 22px 22px;
   opacity: 1;
   transform: perspective(1300px) translateX(-9rem) translateY(0.5rem)
     rotateY(30deg) scale(0.51);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 .body.active .second.hover-second {
   opacity: 1;
   transform: perspective(1300px) translateX(-9rem) translateY(0.5rem)
     rotateY(30deg) scale(0.51);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 
 
@@ -93,11 +99,15 @@ background-size: 22px 22px;
   opacity: 1;
   transform: perspective(1300px) translateX(-11.5rem) translateY(-1rem)
     rotateY(30deg) scale(0.51);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 .body.active .third.hover-third {
   opacity: 1;
   transform: perspective(1300px) translateX(-11.5rem) translateY(-1rem)
     rotateY(30deg) scale(0.51);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 
 .body.active .fourth{
@@ -115,11 +125,15 @@ background-size: 22px 22px;
   opacity: 1;
   transform: perspective(1300px) translateX(-14rem) translateY(-2.5rem)
     rotateY(30deg) scale(0.515);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 .body.active .fourth.hover-fourth {
   opacity: 1;
   transform: perspective(1300px) translateX(-14rem) translateY(-2.5rem)
     rotateY(30deg) scale(0.515);
+  box-shadow: 0 0 100px 2px rgb(92, 8, 92);
+
 }
 
 
@@ -214,17 +228,47 @@ background-size: 22px 22px;
   pointer-events: none;
   transition: width .3s, height .3s, opacity .3s;
   z-index: 999;
-  box-shadow: 0 0 100px 20px rgb(92, 8, 92);
+  box-shadow: 0 0 100px 20px #5c085c;
 
 }
 
 .hover {
   background-color: rgb(183, 174, 174);
   opacity: 0.5;
+  
 }
 
 .cursorinnerhover {
   width: 50px;
   height: 50px;
   opacity: .5;
+}
+
+/* make this responsive */
+@media (max-width: 768px) {
+  .body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .body .first {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .body .second {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .body .third {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .body .fourth {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 }

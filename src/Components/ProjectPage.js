@@ -1,27 +1,31 @@
 import React from "react";
-import './ProjectPage.css';
+import "./ProjectPage.css";
+import Movieguessr from "./Projects/Movieguessr";
+import Textanalyzer from "./Projects/Textanalyzer";
 
 const ProjectPage = (props) => {
-
   const handleProject2 = (e) => {
-    let project = document.querySelector(".project");
-    if (project.classList.contains("active-proj")) {
+    let body = document.querySelector(".body");
+    if (!body.classList.contains("active")) {
       // console.log("clicked");
     } else {
       props.func();
     }
   };
+
+
   return (
     <div>
       <main onClick={handleProject2} className="project second">
-      <div className="project-bookmark rounded text-black"><b>PROJECTS</b></div>
+        <div className="project-bookmark rounded text-black">
+          <b>PROJECTS</b>
+        </div>
+        
         <div className="project-inner">
-          <h1>Projects</h1>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
-            minima.
-          </p>
+          <div class="projects">
+            <Textanalyzer />
+            <Movieguessr />
+          </div>
         </div>
       </main>
     </div>

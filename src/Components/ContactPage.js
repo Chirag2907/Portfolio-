@@ -18,8 +18,8 @@ const ContactPage = (props) => {
   };
 
   const handleContact2 = (e) => {
-    let contact = document.querySelector(".contact");
-    if (contact.classList.contains("active-contact")) {
+    let body = document.querySelector(".body");
+    if (!body.classList.contains("active")) {
     } else {
       props.func();
     }
@@ -53,6 +53,19 @@ const ContactPage = (props) => {
     setNewName("");
   };
 
+  const letterBounce = (x) => { 
+    let letter = document.querySelector("."+x);
+    if(letter.classList.contains('jelly')){
+      return;
+    }
+    letter.classList.add('jelly');
+    setTimeout(() => {
+      letter.classList.remove('jelly');
+    }, 1000);
+   }
+
+   let a="aa", b="bb", c="cc", e="ee", f="fff", h="hh", i="ii", j="jj", k="kk", l="ll";
+
   return (
     <div>
       <ToastContainer
@@ -69,13 +82,24 @@ const ContactPage = (props) => {
       />
 
       <main onClick={handleContact2} className="contact fourth">
-        <div className="contact-bookmark rounded text-black"><b>CONTACT</b></div>
-        <h1 className="text-purple-400 mx-auto mt-10 h-16 font-mono">
-          GET IN TOUCH
+        <div className="contact-inner contact-bookmark rounded text-black"><b>CONTACT</b></div>
+        <h1 className="text-purple-400 ff font-bold mx-auto mt-10 h-16 font-mono">
+          <span onMouseOver={()=>letterBounce(a)} className="letter aa">G</span>
+          <span onMouseOver={()=>letterBounce(b)} className="letter bb">E</span>
+          <span onMouseOver={()=>letterBounce(c)} className="letter cc">T</span>
+          <span>{'\u00A0'}</span>
+          <span onMouseOver={()=>letterBounce(e)} className="letter ee">I</span>
+          <span onMouseOver={()=>letterBounce(f)} className="letter fff">N</span>
+          <span>{'\u00A0'}</span>
+          <span onMouseOver={()=>letterBounce(h)} className="letter hh">T</span>
+          <span onMouseOver={()=>letterBounce(i)} className="letter ii">O</span>
+          <span onMouseOver={()=>letterBounce(j)} className="letter jj">U</span>
+          <span onMouseOver={()=>letterBounce(k)} className="letter kk">C</span>
+          <span onMouseOver={()=>letterBounce(l)} className="letter ll">H</span>
         </h1>
         <div action="#" className="space-y-8 mx-auto w-1/3 ">
           <div>
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+            <label className="ff block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">
               Name<span className="text-red-400">*</span>
             </label>
             <input
@@ -85,13 +109,13 @@ const ContactPage = (props) => {
               }}
               type="text"
               id="name"
-              className="textf rounded p-2 text-black w-full"
+              className="ff textf rounded p-2 text-black w-full"
               placeholder="Enter your name"
               required
             />
           </div>
           <div>
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+            <label className="ff block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">
               Email<span className="text-red-400">*</span>
             </label>
             <input
@@ -101,13 +125,13 @@ const ContactPage = (props) => {
               }}
               type="email"
               id="email"
-              className="textf rounded p-2 text-black w-full"
+              className="textf ff rounded p-2 text-black w-full"
               placeholder="Enter your Email ID"
               required
             />
           </div>
-          <div className="sm:col-span-2">
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+          <div className="ff sm:col-span-2">
+            <label className="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">
               Your message
             </label>
             <textarea
