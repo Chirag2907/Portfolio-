@@ -7,21 +7,24 @@
   pointer-events: none;
 }
 
-/* .cardd:hover {
+.cardd:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   cursor: pointer;
   transition: 0.3s ease-in-out;
   box-shadow: 0 0 100px 10px rgb(92, 8, 92);
   transform: scale(1.05);
-} */
-.asdasd {
+}
+
+.fontweight {
   font-weight: 900;
 }
-.asd {
+
+.whitefont {
   font-weight: 700;
   background-color: #f1f2f2;
 }
+
 .showcard {
   z-index: 800;
   position: fixed;

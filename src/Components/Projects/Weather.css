@@ -3,8 +3,6 @@
   pointer-events: none;
 }
 .cardd{
-    /* -webkit-filter: grayscale(100%); Safari 6.0 - 9.0
-    filter: grayscale(100%); */
     position: relative;
     background-color: #f1f2f2;
   }
@@ -15,14 +13,6 @@
     transition: 0.3s ease-in-out;
     box-shadow: 0 0 100px 10px rgb(92, 8, 92);
     transform: scale(1.05);
-  }
-  .asdasd{
-    font-weight: 900;
-  }
-  .asd{
-    font-weight: 700;
-    background-color: #f1f2f2;
-    
   }
   .animate-card-weather{
     z-index: 800;

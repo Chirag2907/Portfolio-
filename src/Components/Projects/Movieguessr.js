@@ -29,13 +29,14 @@ const Movieguessr = () => {
                 <img
                   className="rounded-t w-full"
                   src={guessthemovie}
+                  width={100}
                   alt="Sunset in the mountains"
                 />
                 <div className="p-3">
-                  <h5 className="ff font-black text-gray-900 text-xl font-medium mb-2 asdasd">
+                  <h5 className="ff font-black text-gray-900 text-xl font-medium mb-2 fontweight">
                     <b>Movie Guessr</b>
                   </h5>
-                  <p className="ff text-black mb-2 asd">
+                  <p className="ff text-black mb-2 whitefont">
                     This is a simple game where you have to guess the movie name letter by letter.
                     The movies are fetched from an API.
                   </p>

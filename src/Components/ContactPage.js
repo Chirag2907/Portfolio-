@@ -1,11 +1,10 @@
 import React from "react";
-import "./ContactPage.css";
+import "./styles/ContactPage.css";
 import { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase-config";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import gif from "./contactVector.gif";
 
 const ContactPage = (props) => {
   const notify = () => toast("Thank you for reaching out! :)");
@@ -131,7 +130,7 @@ const ContactPage = (props) => {
           </h1>
           <div action="#" className="space-y-8 mx-auto w-1/3 formm ">
             <div>
-              <label className="ff block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">
+              <label className="ff block mb-2 text-sm font-bold text-white dark:text-gray-300">
                 Name<span className="text-red-400">*</span>
               </label>
               <input
@@ -147,7 +146,7 @@ const ContactPage = (props) => {
               />
             </div>
             <div>
-              <label className="ff block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">
+              <label className="ff block mb-2 text-sm font-bold text-white dark:text-gray-300">
                 Email<span className="text-red-400">*</span>
               </label>
               <input
@@ -163,8 +162,8 @@ const ContactPage = (props) => {
               />
             </div>
             <div className="ff sm:col-span-2">
-              <label className="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">
-                Your message
+              <label className="block mb-2 text-sm font-bold text-white dark:text-gray-300">
+                Your message<span className="text-red-400">*</span>
               </label>
               <textarea
                 value={newMsg}
@@ -175,6 +174,7 @@ const ContactPage = (props) => {
                 rows="6"
                 className="textf rounded p-2 text-black w-full"
                 placeholder="Leave me a message..."
+                required
               ></textarea>
             </div>
             <div className="w-full submit-button ">

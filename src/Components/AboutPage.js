@@ -1,11 +1,10 @@
 import React from "react";
-import "./AboutPage.css";
+import "./styles/AboutPage.css"
 import { TagCloud } from "@frank-mayer/react-tag-cloud";
 const AboutPage = (props) => {
   const handleAbout2 = (e) => {
     let body = document.querySelector(".body");
     if (!body.classList.contains("active")) {
-      // console.log("first");
     } else {
       props.func();
     }

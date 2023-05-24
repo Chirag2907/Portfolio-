@@ -29,13 +29,14 @@ const Weather = () => {
                 <img
                   className="rounded-t w-full"
                   src={guessthemovie}
+                  width={100}
                   alt="Sunset in the mountains"
                 />
                 <div className="p-3">
-                  <h5 className="ff font-black text-gray-900 text-xl font-medium mb-2 asdasd">
+                  <h5 className="ff font-black text-gray-900 text-xl font-medium mb-2 fontweight">
                     <b>Weather Forecast</b>
                   </h5>
-                  <p className="ff text-black mb-2 asd">
+                  <p className="ff text-black mb-2 whitefont">
                     A website that shows the weather of any city in the world. 
                     It uses the OpenWeatherMap API to fetch a 5 day forecast of the city.
                   </p>

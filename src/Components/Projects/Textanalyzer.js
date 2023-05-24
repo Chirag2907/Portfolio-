@@ -28,13 +28,14 @@ const Textanalyzer = (props) => {
         <img
           className="rounded-t w-full"
           src={textAnalyzer}
+          width={100}
           alt="Sunset in the mountains"
         />
         <div className="p-3">
-          <h5 className="ff font-black text-gray-900 text-xl font-medium mb-2 asdasd">
+          <h5 className="ff font-black text-gray-900 text-xl font-medium mb-2 fontweight">
             <b>Text Analyzer</b>
           </h5>
-          <p className="ff text-black mb-2 asd">
+          <p className="ff text-black mb-2 whitefont">
             This website analyzes the text you enter and gives you a brief
             report about the text. The text is also sentimentally analyzed.
           </p>
