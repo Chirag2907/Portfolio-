@@ -26,17 +26,17 @@ const Textanalyzer = (props) => {
        {Show ? (
           <div onClick={textAnalyzerClicked} className="blurMe"></div>
         ) : null}
-        <div onClick={textAnalyzerClicked} class="cardd rounded max-w-sm ">
+        <div onClick={textAnalyzerClicked} className="cardd rounded max-w-sm ">
               <img
                 className="rounded-t w-full"
                 src={textAnalyzer}
                 alt="Sunset in the mountains"
               />
-              <div class="p-3">
-                <h5 class="ff font-black text-gray-900 text-xl font-medium mb-2 asdasd">
+              <div className="p-3">
+                <h5 className="ff font-black text-gray-900 text-xl font-medium mb-2 asdasd">
                   <b>Text Analyzer</b>
                 </h5>
-                <p class="ff text-black mb-2 asd">
+                <p className="ff text-black mb-2 asd">
                   This website analyzes the text you enter and gives you a brief
                   report about the text. The text is also sentimentally
                   analyzed.
@@ -56,29 +56,15 @@ const Textanalyzer = (props) => {
                   allowfullscreen
                   title="Text Analyzer"
                 ></iframe>
-                <div class="bg-white txtasum rounded-b">
-                  <p class="boldd ff text-black">
-                    <div>
-                      Website:{" "}
-                      <a
-                        href="https://chirag2907.github.io/Text-Analyzer/"
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        https://chirag2907.github.io/Text-Analyzer/
-                      </a>
+                <div className="bg-white txtasum rounded-b">
+                  <div className="but ff text-black">
+                    <div className="gotoweb" onClick={()=>window.open('https://chirag2907.github.io/Text-Analyzer/', '_blank')}>
+                      Visit Website
                     </div>
-                    <div>
-                      GitHub:{" "}
-                      <a
-                        href="https://github.com/Chirag2907/Text-Analyzer"
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        https://github.com/Chirag2907/Text-Analyzer
-                      </a>
+                    <div className="gotoweb" onClick={()=>window.open('https://github.com/Chirag2907/Text-Analyzer/', '_blank')}>
+                      Go to Github
                     </div>
-                  </p>
+                  </div>
                 </div>
               </div>
             ) : null}

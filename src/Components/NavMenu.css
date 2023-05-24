@@ -42,3 +42,9 @@
     transform: translateY(0px);
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .custom-card {
+    display: none;
+  }
+}

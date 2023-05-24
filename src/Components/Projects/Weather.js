@@ -1,10 +1,10 @@
 import React from 'react'
 import { useState, useEffect } from "react";
-import guessthemovie from "../../Images/guess-the-movie.png";
-import "./Movieguessr.css";
+import guessthemovie from "../../Images/weather.png";
+import "./Weather.css";
 
 
-const Movieguessr = () => {
+const Weather = () => {
     const [Show, setShow] = useState(false);
 
     const textAnalyzerClicked = () => {
@@ -12,7 +12,7 @@ const Movieguessr = () => {
     };
     useEffect(() => {
       const iframe = document.createElement("iframe");
-      iframe.src = "https://chirag2907.github.io/Guess-the-movie/";
+      iframe.src = "https://chirag2907.github.io/weather-forecast/";
       iframe.style.display = "none";
       document.body.appendChild(iframe);
       return () => {
@@ -33,22 +33,22 @@ const Movieguessr = () => {
                 />
                 <div className="p-3">
                   <h5 className="ff font-black text-gray-900 text-xl font-medium mb-2 asdasd">
-                    <b>Movie Guessr</b>
+                    <b>Weather Forecast</b>
                   </h5>
                   <p className="ff text-black mb-2 asd">
-                    This is a simple game where you have to guess the movie name letter by letter.
-                    The movies are fetched from an API.
+                    A website that shows the weather of any city in the world. 
+                    It uses the OpenWeatherMap API to fetch a 5 day forecast of the city.
                   </p>
                 </div>
               </div>
   
               {Show ? (
-                <div className="animate-card">
+                <div className="animate-card-weather">
                   <iframe
                     className="rounded-t-lg"
                     width="100%"
                     height="450"
-                    src="https://chirag2907.github.io/Guess-the-movie/"
+                    src="https://chirag2907.github.io/weather-forecast/"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
@@ -57,10 +57,10 @@ const Movieguessr = () => {
                   
                   <div className="bg-white txtasum rounded-b">
                   <div className="but ff text-black">
-                    <div className="gotoweb" onClick={()=>window.open('https://chirag2907.github.io/Guess-the-movie/', '_blank')}>
+                    <div className="gotoweb" onClick={()=>window.open('https://chirag2907.github.io/weather-forecast/', '_blank')}>
                       Visit Website
                     </div>
-                    <div className="gotoweb" onClick={()=>window.open('https://github.com/Chirag2907/Guess-the-movie/', '_blank')}>
+                    <div className="gotoweb" onClick={()=>window.open('https://github.com/Chirag2907/weather-forecast/', '_blank')}>
                       Go to Github
                     </div>
                   </div>
@@ -71,4 +71,4 @@ const Movieguessr = () => {
     )
   }
 
-export default Movieguessr
+export default Weather

@@ -7,7 +7,6 @@ import ContactPage from "./Components/ContactPage";
 import NavBar from "./Components/NavBar";
 import NavMenu from "./Components/NavMenu";
 import { useEffect } from "react";
-import AnimatedCursor from "react-animated-cursor"
 import "tw-elements";
 
 function App() {
@@ -152,23 +151,26 @@ function App() {
   };
 
   return (
-    
-    <div className="body">
-      <div className="cursor"></div>
-      <div className="cursor2"></div>
-      <NavBar func={handleHome} />
-      <NavMenu
-        func1={handleHome}
-        func2={handleProject}
-        func3={handleAbout}
-        func4={handleContact}
-      />
-
-      <ContactPage func={handleContact} />
-      <AboutPage func={handleAbout} func2={handleContact} />
-      <ProjectPage func={handleProject} />
-      <HomePage func={handleHome} />
-    </div>
+    <span className="main">
+      <div className="body">
+        <div className="cursor"></div>
+        <div className="cursor2"></div>
+        <NavBar func={handleHome} />
+        <NavMenu
+          className="nav-menu"
+          func1={handleHome}
+          func2={handleProject}
+          func3={handleAbout}
+          func4={handleContact}
+        />
+        <div className="pages">
+          <ContactPage func={handleContact} />
+          <AboutPage func={handleAbout} func2={handleContact} />
+          <ProjectPage func={handleProject} />
+          <HomePage func={handleHome} />
+        </div>
+      </div>
+    </span>
   );
 }
 

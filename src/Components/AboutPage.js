@@ -26,7 +26,7 @@ const AboutPage = (props) => {
     c = "ccc",
     d = "ddd",
     e = "eee",
-    f = "fff",
+    f = "ffff",
     g = "ggg",
     h = "hhh",
     i = "iii",
@@ -40,7 +40,7 @@ const AboutPage = (props) => {
   return (
     <div>
       <main onClick={handleAbout2} className="about third">
-        <div className="about-bookmark rounded text-black">
+        <div className="about-bookmark rounded">
           <b>ABOUT</b>
         </div>
         <div className="about-inner">
@@ -62,7 +62,7 @@ const AboutPage = (props) => {
             <span onMouseOver={() => letterBounce(e)} className="letter eee">
               y
             </span>
-            <span onMouseOver={() => letterBounce(f)} className="letter fff">
+            <span onMouseOver={() => letterBounce(f)} className="letter ffff">
               s
             </span>
             <span onMouseOver={() => letterBounce(g)} className="letter ggg">
@@ -93,6 +93,12 @@ const AboutPage = (props) => {
               I am a self taught full-stack web developer and a competitive
               programmer. I have a knack for problem solving which helps me come
               up with creative solutions to problems.
+            </p>
+            <h1 className="mobile">SKILLS</h1>
+            <p className="mobile-only">
+              <span className="titlee">Langauges:</span> C, C++, Python, JavaScript <br/>
+              <span className="titlee">Web Development:</span> HTML, CSS, ReactJS, NextJs, Bootstrap, TailwindCSS, mySQL, Google Firebase <br/>
+              <span className="titlee">Miscellaneous:</span> Canva, Figma, Linux, Git <br/>
             </p>
             <p></p>
             <span

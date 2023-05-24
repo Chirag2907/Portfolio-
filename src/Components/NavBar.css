@@ -11,6 +11,9 @@ header .wrapper {
   align-items: center;
   width: 100vw;
   height: 70px;
+  /* background-color: rgba(0,0,0,0.5); */
+    backdrop-filter: blur(2px);
+    border-radius: 2rem;
 }
 
 header .logo {
@@ -48,4 +51,24 @@ header .logo {
 }
 .body.active .l3 {
   transform: rotate(315deg) translateY(-11px) ;
+}
+
+@media screen and (max-width: 1000px) {
+  header .wrapper{
+    height: 12rem;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
+  }
+
+  header .logo{
+    font-size: 6.5rem;
+    position: absolute;
+    top: 1rem;
+  }
+  header .hamburger{
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    transform: scale(2.5);
+  }
 }

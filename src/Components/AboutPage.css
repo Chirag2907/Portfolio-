@@ -5,15 +5,18 @@
 .about.active-about {
   z-index: 102;
 }
-
-.about-bookmark{
-  position: relative;
+.about{
+  overflow: scroll;
+}
+.body.active .about-bookmark{
+  color: black;
+  position: absolute;
   border:rgb(92, 8, 92);
   background-color: antiquewhite;
   width: 10rem;
   height: 3rem;
-  top:3.5rem;
-  left: -6.5rem;
+  top:4rem;
+  left: -3rem;
   transform: rotate(-90deg) perspective(1300px);
   display: flex;
   justify-content: center;
@@ -21,7 +24,9 @@
   font-size: 1.5rem;
 }
 
-
+.about-bookmark{
+  display: none;
+}
 
 .letter {
   will-change: transform;
@@ -64,12 +69,10 @@
 }
 
 .headingtitle{
-  /* font-family: 'Bad Script', cursive; */
   font-family: 'Rubik Vinyl', cursive;
   font-weight: bold;
-  margin-top: -2rem;
+  margin-top: 10%;
   margin-left: 10rem;
-  /* font-size: 4rem; */
 }
 
 .abouttext{
@@ -115,5 +118,93 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+.mobile, .mobile-only{
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .mobile, .mobile-only{
+    display: block;
+  }
+  .mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    font-size: 4rem;
+    font-weight: 900;
+  }
+  .titlee{
+    color:rgb(192, 132, 192)
+  }
+  .mobile-only{
+    line-height: 2;
+  }
+  .connect{
+    margin-top: 3rem;
+    font-size: 4rem;
+  }
+
+  .abouttext{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    margin-left: 6rem;
+    font-size: 2.4rem;
+  }
+  .text-sphere{
+    display: none;
+  }
+.headingtitle{
+  margin-top: 30%;
+  font-size: 6rem;
+  margin-left: 6rem;
+}
+  .body.active .about-inner{
+    opacity: 0.6;
+    animation: fade-out 1s ease-in-out;
+  }
+  @keyframes fade-out {
+    from{
+      opacity: 1;
+    }
+    to{
+      opacity: 0.6;
+    }
+  }
+  .about-bookmark {
+    display: none;
+    z-index: 999;
+    color: white;
+    opacity: 1; 
+  }
+  .body.active .about-bookmark{
+    color: white;
+    background-color: transparent;
+    display: flex;
+    width: 80%;
+    height: 50%;
+    z-index: 999;
+    transform: rotate(0deg);
+    font-size: 9rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fade-in 1s ease-in-out;
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
   }
 }

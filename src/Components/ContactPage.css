@@ -3,13 +3,17 @@
   z-index: 102;
 }
 
+.contact{
+  overflow: scroll;
+}
+
 .heading {
   position: absolute;
   top: 7rem;
 }
 
 .body.active .heading{
-  top:0rem;
+  top:3rem;
 }
 
 .input{
@@ -48,21 +52,41 @@ transition: 0.5s ease-in-out;
   transform: scale(1.1);
 }
 
-.contact-bookmark{
+.heading{
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.formm{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.body.active .formm{
+  pointer-events: none;
+}
+
+.body.active .contact-bookmark{
+  color: black;
   position: relative;
   border:rgb(92, 8, 92);
   background-color: antiquewhite;
   width: 10rem;
   height: 3rem;
-  top:3.5rem;
-  left: -6.5rem;
+  top:4rem;
+  left: -3rem;
   transform: rotate(-90deg) perspective(1300px);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
 }
-
+.contact-bookmark{
+  display: none;
+}
 .contact-gif{
   position: fixed;
   top:5rem;
@@ -109,4 +133,73 @@ transition: 0.5s ease-in-out;
   cursor: default;
   display: inline-block;
   transition: transform 0.15s ease;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .heading{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transition: all 0.5s ease-in-out;
+  }
+  .body.active .heading{
+    font-size: 3rem;
+    top: 3rem;
+    transition: all 0.5s ease-in-out;
+  }
+  .formm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(2.5) translate(-20%, -15%);
+    transition: all 0.5s ease-in-out;
+  }
+  .body.active .formm{
+    transform: scale(2) translate(-20%, -15%);
+    transition: all 0.5s ease-in-out;
+
+  }
+  .body.active .contact-inner{
+    opacity: 0.6;
+    animation: fade-out 1s ease-in-out;
+  }
+  @keyframes fade-out {
+    from{
+      opacity: 1;
+    }
+    to{
+      opacity: 0.6;
+    }
+  }
+  .contact-bookmark {
+    display: none;
+    z-index: 999;
+    color: white;
+    opacity: 1; 
+  }
+  .body.active .contact-bookmark{
+    color: white;
+    background-color: transparent;
+    display: flex;
+    width: 80%;
+    height: 50%;
+    z-index: 999;
+    transform: rotate(0deg);
+    font-size: 9rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    animation: fade-in 1s ease-in-out;
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
 }

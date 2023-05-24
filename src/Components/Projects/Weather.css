@@ -2,7 +2,6 @@
 .body.active .cardd{
   pointer-events: none;
 }
-
 .cardd{
     /* -webkit-filter: grayscale(100%); Safari 6.0 - 9.0
     filter: grayscale(100%); */
@@ -25,7 +24,7 @@
     background-color: #f1f2f2;
     
   }
-  .animate-card{
+  .animate-card-weather{
     z-index: 800;
     position: fixed;
     top:6rem;
@@ -33,8 +32,8 @@
     height: 35rem;
     width: 65rem;
     transition: 0.3s ease-in-out;
-    animation: anim 0.3s ease-in-out;
-    transform: scale(1) translate(-34rem,0);
+    animation: anim-weather 0.3s ease-in-out;
+    transform: scale(1) translate(-58rem,0);
 
   
   }
@@ -50,14 +49,14 @@
     backdrop-filter: blur(2px);
   }
   
-  @keyframes anim{
+  @keyframes anim-weather{
     0%{
       transform: scale(0.58) translate(-57.8rem,0) scaleX(0.62);
   
   
     }
     100%{
-      transform: scale(1) translate(-34rem,0);
+      transform: scale(1) translate(-58rem,0);
     }
   }
   
@@ -83,19 +82,21 @@
     gap:1rem;
   }
   
+
   @media screen and (max-width: 1000px) {
     .cardd {
       transform: scale(2);
     }
-    .animate-card {
+    .animate-card-weather {
       position: fixed;
-      top: 30%;
-      margin-left: 20rem;
+      top: 70%;
+      margin-left: 43rem;
       width: 85%;
-      animation: anim 0.3s ease-in-out;
+      animation: anim-weather 0.3s ease-in-out;
     }
     .txtasum{
       font-size: 2rem;
     }
+
   }
   

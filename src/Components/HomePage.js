@@ -31,7 +31,7 @@ const HomePage = (props) => {
     <div>
       
       <main onClick={handleHome2} className="home first">
-      <div className="home-bookmark rounded text-black"><b>HOME</b></div>
+      <div className="home-bookmark rounded"><b>HOME</b></div>
         <div className="home-inner">
           <div className="textt">
             <h1 className="title text-7xl mt-5">
@@ -42,6 +42,7 @@ const HomePage = (props) => {
               <span onMouseOver={()=>letterBounce(e)} className="letter e">o</span>
               <span onMouseOver={()=>letterBounce(f)} className="letter f">!</span>
               <span>{'\u00A0'}</span>
+              <br className="break"/>
               <span onMouseOver={()=>letterBounce(g)} className="letter g text-purple-400">I</span>
               <span onMouseOver={()=>letterBounce(h)} className="letter h text-purple-400">'</span>
               <span onMouseOver={()=>letterBounce(i)} className="letter i text-purple-400">m</span>
@@ -54,12 +55,12 @@ const HomePage = (props) => {
               <span onMouseOver={()=>letterBounce(o)} className="letter o text-purple-400">g</span>
             </h1>
 
-            <h4 className="ff font-bold text-3xl text-purple-400">
+            <h4 className="tagline ff font-bold text-3xl text-purple-400">
               A web developer & Competitive Programmer{" "}
             </h4>
             <div className="ff text-xl  desc">
-              I am a sophomore at Netaji Subhas University of Technology,
-              pursuing bachelors in Information Technology. I'm a full-stack web developer
+              I am an undergraduate student at Netaji Subhas University of Technology,
+              pursuing bachelors in Information Technology. <br></br>I'm a full-stack web developer
               and a competitive programmer.
 
             </div>
