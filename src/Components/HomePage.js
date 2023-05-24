@@ -131,12 +131,14 @@ const HomePage = (props) => {
             <div className="ff text-xl  desc">
               I am an undergraduate student at Netaji Subhas University of
               Technology, pursuing bachelors in Information Technology.{" "}
-              <br></br>I'm a full-stack web developer and a competitive
+              <br/>I'm a full-stack web developer and a competitive
               programmer.
+              <br/>I also have a keen interest in Machine Learning and Data Science as well.
             </div>
 
             <div className="flex gap-4 icons mt-5 justify-center w-50">
               <img
+                loading="eager"
                 draggable={false}
                 className="links"
                 onClick={() =>
@@ -147,6 +149,7 @@ const HomePage = (props) => {
                 alt="img"
               />
               <img
+                loading="eager"
                 draggable={false}
                 className="links"
                 onClick={() =>
@@ -160,6 +163,7 @@ const HomePage = (props) => {
                 alt="img"
               />
               <img
+                loading="eager"
                 draggable={false}
                 className="links"
                 onClick={() =>
@@ -176,7 +180,7 @@ const HomePage = (props) => {
           </div>
           <img
             draggable={false}
-            loading="lazy"
+            loading="eager"
             className="border pfp rounded"
             src={pic}
             width={250}

@@ -26,6 +26,7 @@ const Textanalyzer = (props) => {
       ) : null}
       <div onClick={textAnalyzerClicked} className="cardd rounded max-w-sm ">
         <img
+          loading="lazy"
           className="rounded-t w-full"
           src={textAnalyzer}
           width={100}
@@ -45,6 +46,7 @@ const Textanalyzer = (props) => {
       {Show ? (
         <div className="showcard">
           <iframe
+            loading="lazy"
             className="rounded-t-lg"
             width="100%"
             height="450"

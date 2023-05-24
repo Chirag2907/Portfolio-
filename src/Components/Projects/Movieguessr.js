@@ -27,6 +27,7 @@ const Movieguessr = () => {
           ) : null}
           <div onClick={textAnalyzerClicked} class="cardd rounded max-w-sm ">
                 <img
+                  loading="lazy"
                   className="rounded-t w-full"
                   src={guessthemovie}
                   width={100}
@@ -46,6 +47,7 @@ const Movieguessr = () => {
               {Show ? (
                 <div className="animate-card">
                   <iframe
+                  loading="lazy"
                     className="rounded-t-lg"
                     width="100%"
                     height="450"
