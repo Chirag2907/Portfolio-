@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import guessthemovie from "../../Images/weather.webp";
 import "./Weather.css";
 
@@ -9,15 +9,6 @@ const Weather = () => {
   const textAnalyzerClicked = () => {
     setShow(!Show);
   };
-  useEffect(() => {
-    const iframe = document.createElement("iframe");
-    iframe.src = "https://chirag2907.github.io/weather-forecast/";
-    iframe.style.display = "none";
-    document.body.appendChild(iframe);
-    return () => {
-      document.body.removeChild(iframe);
-    };
-  }, []);
 
   return (
     <div>

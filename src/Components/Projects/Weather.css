@@ -1,92 +1,69 @@
-
-.body.active .cardd{
+.body.active .cardd {
   pointer-events: none;
 }
-.cardd{
-    position: relative;
-    background-color: #f1f2f2;
+.cardd {
+  position: relative;
+  background-color: #f1f2f2;
+}
+
+.cardd:hover {
+  cursor: pointer;
+}
+.animate-card-weather {
+  z-index: 800;
+  position: fixed;
+  top: 6rem;
+  margin-left: 13rem;
+  height: 35rem;
+  width: 65rem;
+  transition: 0.3s ease-in-out;
+  animation: anim-weather 0.3s ease-in-out;
+  transform: scale(1) translate(-58rem, 0);
+}
+
+@keyframes anim-weather {
+  0% {
+    transform: scale(0.58) translate(-57.8rem, 0) scaleX(0.62);
   }
-  
-  .cardd:hover{
-    -webkit-filter: grayscale(0%);
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    box-shadow: 0 0 100px 10px rgb(92, 8, 92);
-    transform: scale(1.05);
+  100% {
+    transform: scale(1) translate(-58rem, 0);
   }
-  .animate-card-weather{
-    z-index: 800;
+}
+
+.txtasum {
+  padding: 1rem;
+}
+
+.boldd {
+  font-weight: 900;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+}
+
+a {
+  color: darkblue;
+}
+
+.projects-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .cardd {
+    transform: scale(2);
+  }
+  .animate-card-weather {
     position: fixed;
-    top:6rem;
-    margin-left: 13rem;
-    height: 35rem;
-    width: 65rem;
-    transition: 0.3s ease-in-out;
+    top: 70%;
+    margin-left: 43rem;
+    width: 85%;
     animation: anim-weather 0.3s ease-in-out;
-    transform: scale(1) translate(-58rem,0);
-
-  
   }
-  
-  .blurMe{
-    z-index: 103;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; 
-    background-color: rgba(0,0,0,0.5);
-    backdrop-filter: blur(2px);
+  .txtasum {
+    font-size: 2rem;
   }
-  
-  @keyframes anim-weather{
-    0%{
-      transform: scale(0.58) translate(-57.8rem,0) scaleX(0.62);
-  
-  
-    }
-    100%{
-      transform: scale(1) translate(-58rem,0);
-    }
-  }
-  
-  .txtasum{
-   padding: 1rem;
-  }
-  
-  .boldd{
-    font-weight: 900;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    place-items: center;
-  }
-  
-  a{
-    color: darkblue;
-  }
-  
-  .projects-card{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap:1rem;
-  }
-  
-
-  @media screen and (max-width: 1000px) {
-    .cardd {
-      transform: scale(2);
-    }
-    .animate-card-weather {
-      position: fixed;
-      top: 70%;
-      margin-left: 43rem;
-      width: 85%;
-      animation: anim-weather 0.3s ease-in-out;
-    }
-    .txtasum{
-      font-size: 2rem;
-    }
-
-  }
-  
+}

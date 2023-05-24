@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import guessthemovie from "../../Images/guess-the-movie.webp";
 import "./Movieguessr.css";
 
@@ -10,15 +10,6 @@ const Movieguessr = () => {
     const textAnalyzerClicked = () => {
       setShow(!Show);
     };
-    useEffect(() => {
-      const iframe = document.createElement("iframe");
-      iframe.src = "https://chirag2907.github.io/Guess-the-movie/";
-      iframe.style.display = "none";
-      document.body.appendChild(iframe);
-      return () => {
-        document.body.removeChild(iframe);
-      };
-    }, []);
   
     return (
       <div>

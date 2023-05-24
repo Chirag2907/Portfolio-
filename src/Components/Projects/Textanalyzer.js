@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import textAnalyzer from "../../Images/text-analyzer.webp";
 import "./Textanalyzer.css";
 
@@ -9,15 +9,6 @@ const Textanalyzer = (props) => {
   const textAnalyzerClicked = () => {
     setShow(!Show);
   };
-  useEffect(() => {
-    const iframe = document.createElement("iframe");
-    iframe.src = "https://chirag2907.github.io/Text-Analyzer/";
-    iframe.style.display = "none";
-    document.body.appendChild(iframe);
-    return () => {
-      document.body.removeChild(iframe);
-    };
-  }, []);
 
   return (
     <div>
