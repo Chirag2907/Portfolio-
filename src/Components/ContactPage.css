@@ -189,7 +189,7 @@ transition: 0.5s ease-in-out;
     font-size: 9rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    top: 50%;
+    top:10%;
     left: 50%;
     transform: translate(-50%, 100%);
     animation: fade-in 1s ease-in-out;

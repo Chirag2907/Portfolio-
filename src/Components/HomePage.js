@@ -1,9 +1,9 @@
 import React from "react";
 import "./HomePage.css";
-import pic from "./pic.jpeg";
-import github from "./github.png"
-import linkedin from "./linkedin.png"
-import insta from "./instagram.png"
+import pic from "./pic.webp";
+import github from "./github.webp"
+import linkedin from "./linkedin.webp"
+import insta from "./instagram.webp"
 
 
 const HomePage = (props) => {

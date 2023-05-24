@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from "react";
-import guessthemovie from "../../Images/guess-the-movie.png";
+import guessthemovie from "../../Images/guess-the-movie.webp";
 import "./Movieguessr.css";
 
 

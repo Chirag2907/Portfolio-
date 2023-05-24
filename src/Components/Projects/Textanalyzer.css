@@ -7,14 +7,14 @@
   pointer-events: none;
 }
 
-.cardd:hover {
+/* .cardd:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   cursor: pointer;
   transition: 0.3s ease-in-out;
   box-shadow: 0 0 100px 10px rgb(92, 8, 92);
   transform: scale(1.05);
-}
+} */
 .asdasd {
   font-weight: 900;
 }
@@ -90,6 +90,9 @@ a {
 }
 @media screen and (max-width: 1000px) {
   .cardd {
+    transform: scale(2);
+  }
+  .cardd:hover{
     transform: scale(2);
   }
   .showcard {

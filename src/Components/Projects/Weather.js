@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from "react";
-import guessthemovie from "../../Images/weather.png";
+import guessthemovie from "../../Images/weather.webp";
 import "./Weather.css";
 
 
