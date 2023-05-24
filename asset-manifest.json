@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Portfolio-/static/css/main.fec21324.css",
-    "main.js": "/Portfolio-/static/js/main.bcc1d812.js",
+    "main.js": "/Portfolio-/static/js/main.d1074a5e.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio-/static/js/787.1ed0c42c.chunk.js",
-    "static/media/guess-the-movie.png": "/Portfolio-/static/media/guess-the-movie.5c473f8781bee626f0a7.png",
-    "static/media/pic.jpeg": "/Portfolio-/static/media/pic.935db93e5a86b1c1880b.jpeg",
-    "static/media/weather.png": "/Portfolio-/static/media/weather.b901e6018964037ec697.png",
-    "static/media/instagram.png": "/Portfolio-/static/media/instagram.650c5954be88c41ea944.png",
-    "static/media/text-analyzer.png": "/Portfolio-/static/media/text-analyzer.881a3226263402eaed0c.png",
-    "static/media/github.png": "/Portfolio-/static/media/github.a855c3975c028d8069f5.png",
-    "static/media/linkedin.png": "/Portfolio-/static/media/linkedin.6892b3ae328c7a1e055f.png",
+    "static/media/pic.webp": "/Portfolio-/static/media/pic.49a6267df4ff5c7ac210.webp",
+    "static/media/guess-the-movie.webp": "/Portfolio-/static/media/guess-the-movie.3c32ba67549f0742e25e.webp",
+    "static/media/weather.webp": "/Portfolio-/static/media/weather.2f8f75bc1bb7acacccee.webp",
+    "static/media/text-analyzer.webp": "/Portfolio-/static/media/text-analyzer.3f9ea52f4f4cf1ce0215.webp",
+    "static/media/instagram.webp": "/Portfolio-/static/media/instagram.f038438cdc672b4a64a1.webp",
+    "static/media/github.webp": "/Portfolio-/static/media/github.2a5df899ec640f1d2c51.webp",
+    "static/media/linkedin.webp": "/Portfolio-/static/media/linkedin.b121765c6fd7998a8c99.webp",
     "index.html": "/Portfolio-/index.html",
     "main.fec21324.css.map": "/Portfolio-/static/css/main.fec21324.css.map",
-    "main.bcc1d812.js.map": "/Portfolio-/static/js/main.bcc1d812.js.map",
+    "main.d1074a5e.js.map": "/Portfolio-/static/js/main.d1074a5e.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio-/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fec21324.css",
-    "static/js/main.bcc1d812.js"
+    "static/js/main.d1074a5e.js"
   ]
 }
