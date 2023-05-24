@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/Portfolio-/static/css/main.639ff70c.css",
-    "main.js": "/Portfolio-/static/js/main.7197ca8f.js",
-    "static/media/pic.webp": "/Portfolio-/static/media/pic.49a6267df4ff5c7ac210.webp",
+    "main.js": "/Portfolio-/static/js/main.a909d262.js",
     "static/media/guess-the-movie.webp": "/Portfolio-/static/media/guess-the-movie.3c32ba67549f0742e25e.webp",
+    "static/media/pic.webp": "/Portfolio-/static/media/pic.920aa0e89f986e3c0245.webp",
     "static/media/weather.webp": "/Portfolio-/static/media/weather.2f8f75bc1bb7acacccee.webp",
     "static/media/text-analyzer.webp": "/Portfolio-/static/media/text-analyzer.3f9ea52f4f4cf1ce0215.webp",
     "static/media/instagram.webp": "/Portfolio-/static/media/instagram.f038438cdc672b4a64a1.webp",
@@ -11,10 +11,10 @@
     "static/media/linkedin.webp": "/Portfolio-/static/media/linkedin.b121765c6fd7998a8c99.webp",
     "index.html": "/Portfolio-/index.html",
     "main.639ff70c.css.map": "/Portfolio-/static/css/main.639ff70c.css.map",
-    "main.7197ca8f.js.map": "/Portfolio-/static/js/main.7197ca8f.js.map"
+    "main.a909d262.js.map": "/Portfolio-/static/js/main.a909d262.js.map"
   },
   "entrypoints": [
     "static/css/main.639ff70c.css",
-    "static/js/main.7197ca8f.js"
+    "static/js/main.a909d262.js"
   ]
 }
