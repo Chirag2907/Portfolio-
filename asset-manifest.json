@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-/static/css/main.fec21324.css",
-    "main.js": "/Portfolio-/static/js/main.d1074a5e.js",
+    "main.css": "/Portfolio-/static/css/main.28e3008d.css",
+    "main.js": "/Portfolio-/static/js/main.7aa9e4ab.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio-/static/js/787.1ed0c42c.chunk.js",
     "static/media/pic.webp": "/Portfolio-/static/media/pic.49a6267df4ff5c7ac210.webp",
     "static/media/guess-the-movie.webp": "/Portfolio-/static/media/guess-the-movie.3c32ba67549f0742e25e.webp",
@@ -11,12 +11,12 @@
     "static/media/github.webp": "/Portfolio-/static/media/github.2a5df899ec640f1d2c51.webp",
     "static/media/linkedin.webp": "/Portfolio-/static/media/linkedin.b121765c6fd7998a8c99.webp",
     "index.html": "/Portfolio-/index.html",
-    "main.fec21324.css.map": "/Portfolio-/static/css/main.fec21324.css.map",
-    "main.d1074a5e.js.map": "/Portfolio-/static/js/main.d1074a5e.js.map",
+    "main.28e3008d.css.map": "/Portfolio-/static/css/main.28e3008d.css.map",
+    "main.7aa9e4ab.js.map": "/Portfolio-/static/js/main.7aa9e4ab.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio-/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fec21324.css",
-    "static/js/main.d1074a5e.js"
+    "static/css/main.28e3008d.css",
+    "static/js/main.7aa9e4ab.js"
   ]
 }
