@@ -1,13 +1,16 @@
 import React from "react";
-import './NavMenu.css';
+import "./styles/NavMenu.css";
 
 const NavMenu = (props) => {
   const hoverInHome = (e) => {
     let home = document.querySelector(".home");
-    if(home.classList.contains("first")) home.classList.add("hover-first");
-    else if(home.classList.contains("second")) home.classList.add("hover-second");
-    else if(home.classList.contains("third")) home.classList.add("hover-third");
-    else if(home.classList.contains("fourth")) home.classList.add("hover-fourth");
+    if (home.classList.contains("first")) home.classList.add("hover-first");
+    else if (home.classList.contains("second"))
+      home.classList.add("hover-second");
+    else if (home.classList.contains("third"))
+      home.classList.add("hover-third");
+    else if (home.classList.contains("fourth"))
+      home.classList.add("hover-fourth");
   };
   const hoverOutHome = (e) => {
     let home = document.querySelector(".home");
@@ -19,10 +22,13 @@ const NavMenu = (props) => {
 
   const hoverInProj = (e) => {
     let proj = document.querySelector(".project");
-    if(proj.classList.contains("first")) proj.classList.add("hover-first");
-    else if(proj.classList.contains("second")) proj.classList.add("hover-second");
-    else if(proj.classList.contains("third")) proj.classList.add("hover-third");
-    else if(proj.classList.contains("fourth")) proj.classList.add("hover-fourth");
+    if (proj.classList.contains("first")) proj.classList.add("hover-first");
+    else if (proj.classList.contains("second"))
+      proj.classList.add("hover-second");
+    else if (proj.classList.contains("third"))
+      proj.classList.add("hover-third");
+    else if (proj.classList.contains("fourth"))
+      proj.classList.add("hover-fourth");
   };
   const hoverOutProj = (e) => {
     let proj = document.querySelector(".project");
@@ -34,10 +40,13 @@ const NavMenu = (props) => {
 
   const hoverInAbout = (e) => {
     let about = document.querySelector(".about");
-    if(about.classList.contains("first")) about.classList.add("hover-first");
-    else if(about.classList.contains("second")) about.classList.add("hover-second");
-    else if(about.classList.contains("third")) about.classList.add("hover-third");
-    else if(about.classList.contains("fourth")) about.classList.add("hover-fourth");
+    if (about.classList.contains("first")) about.classList.add("hover-first");
+    else if (about.classList.contains("second"))
+      about.classList.add("hover-second");
+    else if (about.classList.contains("third"))
+      about.classList.add("hover-third");
+    else if (about.classList.contains("fourth"))
+      about.classList.add("hover-fourth");
   };
   const hoverOutAbout = (e) => {
     let about = document.querySelector(".about");
@@ -49,10 +58,14 @@ const NavMenu = (props) => {
 
   const hoverInContact = (e) => {
     let contact = document.querySelector(".contact");
-    if(contact.classList.contains("first")) contact.classList.add("hover-first");
-    else if(contact.classList.contains("second")) contact.classList.add("hover-second");
-    else if(contact.classList.contains("third")) contact.classList.add("hover-third");
-    else if(contact.classList.contains("fourth")) contact.classList.add("hover-fourth");
+    if (contact.classList.contains("first"))
+      contact.classList.add("hover-first");
+    else if (contact.classList.contains("second"))
+      contact.classList.add("hover-second");
+    else if (contact.classList.contains("third"))
+      contact.classList.add("hover-third");
+    else if (contact.classList.contains("fourth"))
+      contact.classList.add("hover-fourth");
   };
   const hoverOutContact = (e) => {
     let contact = document.querySelector(".contact");

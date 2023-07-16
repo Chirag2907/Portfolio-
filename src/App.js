@@ -7,6 +7,7 @@ import ContactPage from "./Components/ContactPage";
 import NavBar from "./Components/NavBar";
 import NavMenu from "./Components/NavMenu";
 import { useEffect } from "react";
+import "tw-elements";
 
 function App() {
   let body, home, proj, about, contact;
@@ -34,7 +35,7 @@ function App() {
     about.classList.remove("active-about");
     contact.classList.remove("active-contact");
     proj.classList.add("active-proj");
-    changeOrder("project")
+    changeOrder("project");
   };
 
   const handleAbout = () => {
@@ -97,7 +98,7 @@ function App() {
     let projPage = document.querySelector(".project");
     let aboutPage = document.querySelector(".about");
     let contactPage = document.querySelector(".contact");
-    
+
     homePage.classList.remove("first");
     homePage.classList.remove("second");
     homePage.classList.remove("third");
@@ -114,57 +115,62 @@ function App() {
     contactPage.classList.remove("second");
     contactPage.classList.remove("third");
     contactPage.classList.remove("fourth");
-  }
+  };
 
-  const changeOrder = (page) => { 
+  const changeOrder = (page) => {
     let homePage = document.querySelector(".home");
     let projPage = document.querySelector(".project");
     let aboutPage = document.querySelector(".about");
     let contactPage = document.querySelector(".contact");
 
-    if(page==="project"){
+    if (page === "project") {
       removeClasses(page);
       projPage.classList.add("first");
       homePage.classList.add("second");
       aboutPage.classList.add("third");
       contactPage.classList.add("fourth");
-    }
-    else if(page==="home"){
+    } else if (page === "home") {
       removeClasses(page);
       homePage.classList.add("first");
       projPage.classList.add("second");
       aboutPage.classList.add("third");
       contactPage.classList.add("fourth");
-    }
-    else if(page==="about"){
+    } else if (page === "about") {
       removeClasses(page);
       aboutPage.classList.add("first");
       homePage.classList.add("second");
       projPage.classList.add("third");
       contactPage.classList.add("fourth");
-    }
-    else if(page==="contact"){
+    } else if (page === "contact") {
       removeClasses(page);
       contactPage.classList.add("first");
       homePage.classList.add("second");
       projPage.classList.add("third");
       aboutPage.classList.add("fourth");
     }
-   }
+  };
 
   return (
-    <div className="body">
-      <div className="cursor"></div>
-      <div className="cursor2"></div>
-      <NavBar func={handleHome}/>
-      <NavMenu func1={handleHome} func2={handleProject} func3={handleAbout} func4={handleContact} />
-
-      <ContactPage func={handleContact}/>
-      <AboutPage func={handleAbout}/>
-      <ProjectPage func={handleProject}/>
-      <HomePage func={handleHome}/>
-      
-    </div>
+    <span className="main">
+      <div className="body">
+        <div className="cursor"></div>
+        <div className="cursor2"></div>
+        <NavBar func={handleHome} />
+        <NavMenu
+          className="nav-menu"
+          func1={handleHome}
+          func2={handleProject}
+          func3={handleAbout}
+          func4={handleContact}
+        />
+        <div className="pages">
+          <ContactPage func={handleContact} />
+          <AboutPage func={handleAbout} func2={handleContact} />
+          <ProjectPage func={handleProject} />
+          <HomePage func={handleHome} />
+        </div>
+      </div>
+    </span>
   );
 }
 

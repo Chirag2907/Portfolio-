@@ -11,10 +11,13 @@ header .wrapper {
   align-items: center;
   width: 100vw;
   height: 70px;
+  /* background-color: rgba(0,0,0,0.5); */
+    backdrop-filter: blur(2px);
+    border-radius: 2rem;
 }
 
 header .logo {
-  font-family: 'Rubik Vinyl', cursive;
+  font-family: 'Cookie', cursive;
   cursor: pointer;
   color: #fff;
   margin-left: 100px;
@@ -41,11 +44,31 @@ header .logo {
   border-radius: 10px;
 }
 .body.active .l1 {
-  transform: rotate(405deg) translateY(10px);
+  transform: rotate(405deg) translateY(10px) ;
 }
 .body.active .l2 {
-  transform: rotate(405deg) translateY(4.4px) translateX(-5.6px);
+  transform: rotate(405deg) translateY(4.4px) translateX(-5px);
 }
 .body.active .l3 {
-  transform: rotate(315deg) translateY(-11px);
+  transform: rotate(315deg) translateY(-11px) ;
+}
+
+@media screen and (max-width: 1000px) {
+  header .wrapper{
+    height: 12rem;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
+  }
+
+  header .logo{
+    font-size: 6.5rem;
+    position: absolute;
+    top: 1rem;
+  }
+  header .hamburger{
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    transform: scale(2.5);
+  }
 }

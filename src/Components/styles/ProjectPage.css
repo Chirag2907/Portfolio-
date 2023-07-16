@@ -1,0 +1,101 @@
+.project.active-project{
+  z-index: 102;
+}
+
+.project{
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+}
+
+.body.active .project-bookmark{
+  position: absolute;
+  border:rgb(92, 8, 92);
+  background-color: antiquewhite;
+  width: 10rem;
+  height: 3rem;
+  top:4rem;
+  left: -3rem;
+  transform: rotate(-90deg) perspective(1300px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.project-bookmark{
+  display: none;
+}
+
+.projects{
+  position: relative;
+  top: 10rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .heading{
+    margin-top: 20%;
+    font-size: 4rem;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .projects{
+    grid-template-columns: 1fr;
+    gap: 25em;
+    top:25%;
+    margin: 1rem;
+  }
+  .show{
+    display:none;
+  }
+  .body.active .project-inner{
+    opacity: 0.6;
+    animation: fade-out 1s ease-in-out;
+  }
+  @keyframes fade-out {
+    from{
+      opacity: 1;
+    }
+    to{
+      opacity: 0.6;
+    }
+  }
+  .project-bookmark {
+    display: none;
+    z-index: 999;
+    color: white;
+    opacity: 1; 
+  }
+  .body.active .project-bookmark{
+    color: white;
+    background-color: transparent;
+    display: flex;
+    width: 80%;
+    height: 50%;
+    z-index: 999;
+    transform: rotate(0deg);
+    font-size: 9rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: fade-in 1s ease-in-out;
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+}
