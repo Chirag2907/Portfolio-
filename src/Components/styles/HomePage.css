@@ -6,6 +6,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.home{
+  overflow: scroll;
+}
+
 @keyframes home-animation {
   from {
     transform: scale(1);
